@@ -2,11 +2,12 @@
   "name": "sevilay-web",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev -p 3001",
-    "build": "next build",
-    "start": "next start -p 3001"
-  },
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "export": "next export"   // <-- bu satırı ekleyin
+},
   "dependencies": {
     "lucide-react": "^0.548.0",
     "next": "^15.0.2",
