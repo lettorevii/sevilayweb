@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactCompiler: true,
-  output: 'export', // statik export için gerekli
+  output: 'standalone', // SSR ve statik sayfalar için uygun
 };
 
 export default nextConfig;
