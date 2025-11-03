@@ -30,13 +30,11 @@ const AboutSection = () => {
             </p>
           </div>
 
-          {/* Biyografi - 10pt (20 ÷ 2) */}
-          <p style={{ fontSize: '10pt', lineHeight: '1.6' }} className="text-gray-700 mb-8 w-5/6">
+          <p style={{ fontSize: '14pt', lineHeight: '1.6' }} className="text-gray-700 mb-8 w-5/6">
             Lisans derecemi Boğaziçi Üniversitesi Psikolojik Danışmanlık bölümünden yüksek onur dereceyle aldım. Uzmanlığını Klinik Psikoloji Yüksek Lisans programını (yetişkin) tamamlayarak İstanbul Bilgi Üniversitesi'nden aldım. Doktora derecemi ise Klinik Uygulamada programını tamamlayarak İngiltere'den University of Exeter'den aldım.
           </p>
 
-          {/* Çalışma Alanları Başlığı - 12.5pt (25 ÷ 2) */}
-          <h2 style={{ fontSize: '12.5pt' }} className="font-bold text-[#5C2E3A] mb-6">
+          <h2 style={{ fontSize: '14pt' }} className="font-bold text-[#5C2E3A] mb-6">
             Çalışmalarımı yürüttüğüm alanlar:
           </h2>
           
@@ -55,9 +53,9 @@ const AboutSection = () => {
             {/* Item 4 */}
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full border-2 border-[#5C2E3A] flex items-center justify-center flex-shrink-0">
-                <span style={{ fontSize: '10pt' }} className="text-[#5C2E3A] font-semibold">4</span>
+                <span style={{ fontSize: '14pt' }} className="text-[#5C2E3A] font-semibold">4</span>
               </div>
-              <p style={{ fontSize: '12pt' }} className="text-gray-700 font-medium">
+              <p style={{ fontSize: '14pt' }} className="text-gray-700 font-medium">
                 Akademik Araştırmalar
               </p>
             </div>
@@ -67,7 +65,7 @@ const AboutSection = () => {
               <div className="w-12 h-12 rounded-full border-2 border-[#5C2E3A] flex items-center justify-center flex-shrink-0">
                 <span style={{ fontSize: '10pt' }} className="text-[#5C2E3A] font-semibold">2</span>
               </div>
-              <p style={{ fontSize: '12pt' }} className="text-gray-700 font-medium">
+              <p style={{ fontSize: '14pt' }} className="text-gray-700 font-medium">
                 Çift ve Ailelerle Psikoterapi
               </p>
             </div>
@@ -75,9 +73,9 @@ const AboutSection = () => {
             {/* Item 5 */}
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full border-2 border-[#5C2E3A] flex items-center justify-center flex-shrink-0">
-                <span style={{ fontSize: '10pt' }} className="text-[#5C2E3A] font-semibold">5</span>
+                <span style={{ fontSize: '14pt' }} className="text-[#5C2E3A] font-semibold">5</span>
               </div>
-              <p style={{ fontSize: '12pt' }} className="text-gray-700 font-medium">
+              <p style={{ fontSize: '14pt' }} className="text-gray-700 font-medium">
                 Süpervizyon
               </p>
             </div>
@@ -85,9 +83,9 @@ const AboutSection = () => {
             {/* Item 3 */}
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full border-2 border-[#5C2E3A] flex items-center justify-center flex-shrink-0">
-                <span style={{ fontSize: '10pt' }} className="text-[#5C2E3A] font-semibold">3</span>
+                <span style={{ fontSize: '14pt' }} className="text-[#5C2E3A] font-semibold">3</span>
               </div>
-              <p style={{ fontSize: '12pt' }} className="text-gray-700 font-medium">
+              <p style={{ fontSize: '14pt' }} className="text-gray-700 font-medium">
                 Seminerler
               </p>
             </div>
@@ -95,9 +93,9 @@ const AboutSection = () => {
             {/* Item 6 */}
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full border-2 border-[#5C2E3A] flex items-center justify-center flex-shrink-0">
-                <span style={{ fontSize: '10pt' }} className="text-[#5C2E3A] font-semibold">6</span>
+                <span style={{ fontSize: '14pt' }} className="text-[#5C2E3A] font-semibold">6</span>
               </div>
-              <p style={{ fontSize: '12pt' }} className="text-gray-700 font-medium">
+              <p style={{ fontSize: '14pt' }} className="text-gray-700 font-medium">
                 Eğitim
               </p>
             </div>

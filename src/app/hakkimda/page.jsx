@@ -1,4 +1,4 @@
-'use client' ;
+'use client';
 
 import React, { useState } from 'react'
 import Hakkimda from '../../components/Hakkimda'
@@ -55,8 +55,14 @@ const AboutPage = () => {
 
                 {/* Açıklama */}
                 <div className="flex-1">
-                  <p className="text-gray-800 leading-relaxed text-sm sm:text-base"
-                    style={{ fontFamily: "'Gotham', sans-serif", fontWeight: 400 }}>
+                  <p 
+                    className="text-gray-800 leading-relaxed text-lg"
+                    style={{ 
+                      fontFamily: "'Gotham', sans-serif", 
+                      fontWeight: 400,
+                      fontSize: '14pt'
+                    }}
+                  >
                     {exp.description}
                   </p>
                 </div>
@@ -66,7 +72,6 @@ const AboutPage = () => {
         </div>
       </div>
 
-      
       <div className='mt-12 w-full h-auto'>
         <img src="/footer.png" alt="" />
       </div>

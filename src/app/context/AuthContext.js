@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
   }, [])
 
   const login = (email, password) => {
-    if (email === 'admin@example.com' && password === 'admin123') {
+    if (email === 'info@binyilsonra.com' && password === 'binyil2025') {
       localStorage.setItem('isAdmin', 'true')
       setIsAdmin(true)
       return true

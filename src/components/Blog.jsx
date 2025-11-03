@@ -27,10 +27,8 @@ const BlogSection = () => {
                 <img 
                   src="/blog4.png" 
                   alt="İlişkinizde Farkı Olmak Mı Aynı Olmak Mı?" 
-                  className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-70"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
-                {/* Siyah Overlay */}
-                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300 rounded-lg"></div>
               </div>
             </a>
           </div>
@@ -43,10 +41,8 @@ const BlogSection = () => {
                 <img 
                   src="/blog5.png" 
                   alt="İlişkinizdeki Öfke Duygunuzun Altında Yetersizlik Hissiniz Olabilir, Aman Dikkat!" 
-                  className="w-full h-full aspect-square object-cover transition-opacity duration-300 group-hover:opacity-70"
+                  className="w-full h-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110"
                 />
-                {/* Siyah Overlay */}
-                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300 rounded-lg"></div>
               </div>
             </a>
 
@@ -56,10 +52,8 @@ const BlogSection = () => {
                 <img 
                   src="/blog3.png" 
                   alt="Kadın Olarak İlişkinizde Kendinizi Yetersiz Hissediyor Musunuz?" 
-                  className="w-full h-full aspect-square object-cover transition-opacity duration-300 group-hover:opacity-70"
+                  className="w-full h-full aspect-square object-cover transition-transform duration-300 group-hover:scale-110"
                 />
-                {/* Siyah Overlay */}
-                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300 rounded-lg"></div>
               </div>
             </a>
           </div>

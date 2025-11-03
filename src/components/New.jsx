@@ -63,12 +63,12 @@ const NewLifeSection = () => {
                 </div>
 
                 {/* Başlık - Poppins 14pt */}
-                <h3 style={{ fontSize: '14pt', fontFamily: 'Poppins, sans-serif', fontWeight: 'bold', color: '#540814' }} className="text-center mb-3">
+                <h3 style={{ fontSize: '18pt', fontFamily: 'Poppins, sans-serif', fontWeight: 'bold', color: '#540814' }} className="text-center mb-3">
                   {step.title}
                 </h3>
 
                 {/* Açıklama - Poppins 10pt */}
-                <p style={{ fontSize: '10pt', lineHeight: '1.4', fontFamily: 'Poppins, sans-serif' }} className="text-gray-700 text-center">
+                <p style={{ fontSize: '14pt', lineHeight: '1.4', fontFamily: 'Poppins, sans-serif' }} className="text-gray-700 text-center">
                   {step.description}
                 </p>
               </div>

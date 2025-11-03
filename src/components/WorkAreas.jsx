@@ -61,18 +61,18 @@ const WorkAreasSection = () => {
       </div>
       
       {/* Başlık - 14pt */}
-      <h3 style={{ fontSize: '13pt' }} className="font-bold text-[#5C2E3A] mb-2">
+      <h3 style={{ fontSize: '18pt' }} className="font-bold text-[#5C2E3A] mb-2">
         {title}
       </h3>
 
       {/* Açıklama */}
-      <p style={{ fontSize: '10pt', lineHeight: '1.4' }} className="text-gray-700 mb-3">
+      <p style={{ fontSize: '14pt', lineHeight: '1.4' }} className="text-gray-700 mb-3">
         {description}
       </p>
 
       {/* Detaylar Linki */}
       <div className="inline-flex items-center gap-2">
-        <span style={{ fontSize: '10pt' }} className="font-bold text-[#5C2E3A]">Detaylar</span>
+        <span style={{ fontSize: '14pt' }} className="font-bold text-[#5C2E3A]">Detaylar</span>
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#5C2E3A" strokeWidth="2">
           <circle cx="8" cy="8" r="6" />
           <path d="M 6 8 L 8 10 L 10 8" />
@@ -149,7 +149,8 @@ const WorkAreasSection = () => {
                 "Sanat, çocukluk tecrübelerinin büyüklüğe aktarılmasıdır."
               </p>
               {/* Yazar - 14pt */}
-              <p style={{ fontSize: '2  4pt' }} className="font-bold text-[#5C2E3A]">
+              <p style={{ fontSize: '24pt' }} className="font-bold text-[#5C2E3A]">
+                <br />
                 S. Freud
               </p>
             </div>
