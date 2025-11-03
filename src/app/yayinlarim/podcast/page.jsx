@@ -1,5 +1,6 @@
 import DailyPostsSection from '@/components/PodcastHead';
 import React from 'react';
+import Podcast from '@/components/Podcast';
 
 const PodcastSection = () => {
   return (<>
@@ -13,27 +14,40 @@ const PodcastSection = () => {
       <h2 className="text-5xl font-poppins font-bold text-[#540814] text-center mb-12">
         
       </h2>
-      
+              <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 mt-20 gap-8">
+          {/* İlk Podcast - Spotify Embed */}
+          <div className="w-full">
+            <iframe 
+              data-testid="embed-iframe" 
+              style={{ borderRadius: '12px' }}
+              src="https://open.spotify.com/embed/episode/6tnNYOzzumbnvoPljUWcni?utm_source=generator" 
+              width="100%" 
+              height="152" 
+              frameBorder="0" 
+              allowFullScreen={true}
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy"
+              title="Spotify Podcast 1"
+            />
+          </div>
+          
+          {/* İkinci Podcast - Spotify Embed */}
+          <div className="w-full ">
+            <iframe 
+              data-testid="embed-iframe" 
+              style={{ borderRadius: '12px' }}
+              src="https://open.spotify.com/embed/episode/2gC2TmlDFJd2zXEgroQM6N?utm_source=generator" 
+              width="100%" 
+              height="152" 
+              frameBorder="0" 
+              allowFullScreen={true}
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy"
+              title="Spotify Podcast 2"
+            />
+          </div>
+        </div>
       {/* Podcast Görselleri */}
-      <div className="flex flex-col gap-8 max-w-4xl mx-auto">
-        {/* İlk Podcast */}
-        <div className="w-full">
-          <img 
-            src="/podcast1.png" 
-            alt="Sosyal medya, toplumsal güzellik algısını nasıl şekillendiriyor?" 
-            className="w-full h-auto object-cover rounded-lg"
-          />
-        </div>
-        
-        {/* İkinci Podcast */}
-        <div className="w-full">
-          <img 
-            src="/podcast3.png" 
-            alt="Pandemi ve Psikoloji: Sevilay Sitrava" 
-            className="w-full h-auto object-cover rounded-lg"
-          />
-        </div>
-      </div>
     </section>
     </>
   );

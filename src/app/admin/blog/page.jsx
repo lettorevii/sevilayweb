@@ -2,19 +2,27 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import AdminLayout from '@/components/admin/AdminLayout'
+import { useAuth } from '@/app/context/AuthContext'
 import Link from 'next/link'
 import { Plus, Edit, Trash2, Eye, Image as ImageIcon, LogOut } from 'lucide-react'
 
 export default function BlogList() {
   const router = useRouter()
+  const { isAdmin, logout, mounted } = useAuth()
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(true)
   const [deleting, setDeleting] = useState(null)
 
   useEffect(() => {
-    fetchPosts()
-  }, [])
+    if (mounted && !isAdmin) {
+      router.push('/admin/login')
+      return
+    }
+    
+    if (mounted && isAdmin) {
+      fetchPosts()
+    }
+  }, [mounted, isAdmin, router])
 
   const fetchPosts = async () => {
     try {
@@ -60,33 +68,39 @@ export default function BlogList() {
 
   const handleLogout = () => {
     if (confirm('Çıkış yapmak istediğinize emin misiniz?')) {
+      logout()
       router.push('/admin/login')
     }
   }
 
-  if (loading) {
+  if (!mounted || loading) {
     return (
-      <AdminLayout>
-        <div className="p-8 flex items-center justify-center">
-          <div className="text-xl text-gray-600">Yükleniyor...</div>
-        </div>
-      </AdminLayout>
+      <div className="p-8 flex items-center justify-center min-h-screen">
+        <div className="text-xl text-gray-600">Yükleniyor...</div>
+      </div>
     )
   }
 
+  if (!isAdmin) {
+    return null
+  }
+
   return (
-    <AdminLayout>
+    <div className="min-h-screen bg-gray-50">
       <div className="p-8">
         {/* Header */}
         <div className="flex justify-between items-center mb-8">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900">Blog Yazıları</h1>
-            <p className="text-gray-600 mt-2">Tüm blog yazılarınızı yönetin ({posts.length})</p>
+            <h1 className="text-3xl font-bold text-gray-900" style={{ fontFamily: "'Gotham', sans-serif", fontWeight: 700 }}>
+              Blog Yazıları
+            </h1>
+            <p className="text-gray-600 mt-2">{posts.length} yazı bulunuyor</p>
           </div>
           <div className="flex gap-4">
             <Link
               href="/admin/blog/new"
               className="flex items-center gap-2 bg-[#540814] text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
+              style={{ fontFamily: "'Gotham', sans-serif", fontWeight: 600 }}
             >
               <Plus size={20} />
               Yeni Yazı
@@ -94,6 +108,7 @@ export default function BlogList() {
             <button
               onClick={handleLogout}
               className="flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
+              style={{ fontFamily: "'Gotham', sans-serif", fontWeight: 600 }}
             >
               <LogOut size={20} />
               Çıkış
@@ -190,6 +205,7 @@ export default function BlogList() {
             <Link
               href="/admin/blog/new"
               className="inline-flex items-center gap-2 bg-[#540814] text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
+              style={{ fontFamily: "'Gotham', sans-serif", fontWeight: 600 }}
             >
               <Plus size={20} />
               Yeni Yazı Ekle
@@ -197,6 +213,6 @@ export default function BlogList() {
           </div>
         )}
       </div>
-    </AdminLayout>
+    </div>
   )
 }

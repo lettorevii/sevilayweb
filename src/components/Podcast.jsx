@@ -4,7 +4,7 @@ const PodcastSection = () => {
   return (
     <>
       {/* Quote Bölümü */}
-      <div className="w-full flex justify-center items-center text-center py-8">
+      <div className="w-full bg-[f7f3f0] flex justify-center items-center text-center py-8">
         <p className="text-2xl font-poppins italic text-[#540814] max-w-3xl">
           "Evrendeki en büyük gösteri, sen zihnini keşfettiğin an başlar." <span className="font-bold not-italic">S. Freud</span>
         </p>

@@ -139,11 +139,7 @@ const CoupleTherapyPage = () => {
           <div>
             <div className="grid grid-cols-2 gap-12 items-center">
               <div>
-                <img 
-                   
-                  alt="Çift Terapisine Kimler Başvurmalı" 
-                  className="w-48  h-auto object-cover rounded-lg"
-                />
+
               </div>
 
               <div>
@@ -156,10 +152,10 @@ const CoupleTherapyPage = () => {
                 <ul className="space-y-3 text-right">
                   {benefits.map((item, index) => (
                     <li key={index} className="flex items-start flex-row-reverse text-right">
-                      <span className="text-[#540814] font-poppins font-bold ml-3 flex-shrink-0">•</span>
+                      <span className="text-[#540814] font-poppins font-bold ml-3 flex-shrink-0 text-right">•</span>
                       <div className="font-poppins">
-                        <span className="font-bold text-[#540814]">{item.title}:</span>
-                        <span className="text-[#540814] ml-1">{item.description}</span>
+                        <span className="font-bold text-[#540814] text-right">{item.title}:</span>
+                        <span className="text-[#540814] ml-1 text-right">{item.description}</span>
                       </div>
                     </li>
                   ))}
