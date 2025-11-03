@@ -1,6 +1,36 @@
 import React from 'react';
 
 const WorkAreasSection = () => {
+  const services = [
+    { id: 1, title: '', image: '/emdr.png', link: '/emdr-terapisi' },
+    { id: 2, title: '', image: '/blreyselp.png', link: '/bireysel-psikoterapi' },
+    { id: 3, title: '', image: '/terapi.png', link: '/cift-iliski-terapisi' },
+    { id: 4, title: '', image: '/aile.png', link: '/aile-terapisi' },
+    { id: 5, title: '', image: '/vizyon.png', link: '/supervizyon' },
+    { id: 6, title: '', image: '/egitim.png', link: '/egitim' },
+  ];
+
+  const topServices = services.slice(0, 3);
+  const bottomServices = services.slice(3, 6);
+
+  const ServiceCard = ({ title, image, link }) => (
+    <a href={link} className="flex flex-col items-center group">
+      {/* İkon Container - Sabit boyut */}
+      <div className="w-[250px] h-[250px] flex items-center justify-center mb-6 rounded-lg overflow-hidden">
+        <img 
+          src={image} 
+          alt={title}
+          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+      
+      {/* Başlık - Sabit yükseklik ve hizalama */}
+      <h3 className="text-xl font-poppins font-semibold text-[#540814] text-center min-h-[56px] flex items-center">
+        {title}
+      </h3>
+    </a>
+  );
+
   return (
     <>
       {/* Çalışma Alanlarım Bölümü */}
@@ -23,63 +53,29 @@ const WorkAreasSection = () => {
           </div>
           
           {/* Üst Sıra - 3 Kart */}
-          <div className="flex justify-center gap-8 mb-12">
-            {/* EMDR Terapisi */}
-            <a href="/emdr-terapisi" className="block hover:opacity-80 transition-opacity">
-              <img 
-                src="/emdr.png" 
-                alt="EMDR Terapisi" 
-                className="w-[250px] h-auto object-contain"
-              />
-            </a>
-            
-            {/* Bireysel Psikoterapi */}
-            <a href="/bireysel-psikoterapi" className="block hover:opacity-80 transition-opacity">
-              <img 
-                src="/blreyselp.png" 
-                alt="Bireysel Psikoterapi" 
-                className="w-[250px] h-auto object-contain"
-              />
-            </a>
-            
-            {/* Çift İlişki Terapisi */}
-            <a href="/cift-iliski-terapisi" className="block hover:opacity-80 transition-opacity">
-              <img 
-                src="/terapi.png" 
-                alt="Çift İlişki Terapisi" 
-                className="w-[250px] h-auto object-contain"
-              />
-            </a>
+          <div className="flex justify-center gap-12 mb-16">
+            {topServices.map((service) => (
+              <div key={service.id} className="w-[200px]">
+                <ServiceCard 
+                  title={service.title}
+                  image={service.image}
+                  link={service.link}
+                />
+              </div>
+            ))}
           </div>
           
           {/* Alt Sıra - 3 Kart */}
-          <div className="flex justify-center gap-8">
-            {/* Aile Terapisi */}
-            <a href="/aile-terapisi" className="block hover:opacity-80 transition-opacity">
-              <img 
-                src="/aile.png" 
-                alt="Aile Terapisi" 
-                className="w-[250px] h-auto object-contain"
-              />
-            </a>
-            
-            {/* Süpervizyon */}
-            <a href="/supervizyon" className="block hover:opacity-80 transition-opacity">
-              <img 
-                src="/vizyon.png" 
-                alt="Süpervizyon" 
-                className="w-[250px] h-auto object-contain"
-              />
-            </a>
-            
-            {/* Eğitim */}
-            <a href="/egitim" className="block hover:opacity-80 transition-opacity">
-              <img 
-                src="/egitim.png" 
-                alt="Eğitim" 
-                className="w-[250px] h-auto object-contain"
-              />
-            </a>
+          <div className="flex justify-center gap-12">
+            {bottomServices.map((service) => (
+              <div key={service.id} className="w-[200px]">
+                <ServiceCard 
+                  title={service.title}
+                  image={service.image}
+                  link={service.link}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

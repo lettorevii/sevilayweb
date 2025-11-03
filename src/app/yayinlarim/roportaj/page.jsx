@@ -1,191 +1,102 @@
 import React from 'react';
+import DailyPostsSection from '@/components/GorselHead';
 
 const VideosPage = () => {
+  const videos = [
+    {
+      id: 1,
+      title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
+      src: 'https://www.youtube.com/embed/RoHmooscQcQ',
+    },
+    {
+      id: 2,
+      title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
+      src: 'https://www.youtube.com/embed/4vDtqLMNGzI',
+    },
+    {
+      id: 3,
+      title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
+      src: 'https://www.youtube.com/embed/RoHmooscQcQ',
+    },
+    {
+      id: 4,
+      title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
+      src: 'https://www.youtube.com/embed/4vDtqLMNGzI',
+    },
+    {
+      id: 5,
+      title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
+      src: 'https://www.youtube.com/embed/RoHmooscQcQ',
+    },
+    {
+      id: 6,
+      title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
+      src: 'https://www.youtube.com/embed/4vDtqLMNGzI',
+    },
+    {
+      id: 7,
+      title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
+      src: 'https://www.youtube.com/embed/RoHmooscQcQ',
+    },
+    {
+      id: 8,
+      title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
+      src: 'https://www.youtube.com/embed/4vDtqLMNGzI',
+    },
+  ];
+
+  const VideoCard = ({ title, src }) => (
+    
+    <div className="w-full">
+      {/* Video */}
+      <div className="relative w-full mb-6" style={{ paddingBottom: '56.25%' }}>
+        <iframe
+          className="absolute top-0 left-0 w-full h-full rounded-lg"
+          src={src}
+          title={title}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+      
+      {/* Başlık - Video Altında */}
+      <h2 className="text-2xl font-poppins font-bold text-[#540814]">
+        {title}
+      </h2>
+    </div>
+  );
+
   return (
     <>
-    <div>
-        <img src="gorsel.png" alt="" />
-    </div>
-    <div className="bg-white min-h-screen px-24 py-20">
-      <div className="max-w-7xl mx-auto">
-        {/* Video Grid - 2 sütun */}
-        <div className="grid grid-cols-2 gap-12">
-          {/* Video 1 */}
-          <div className="w-full">
-            {/* Başlık */}
-            <h2 className="text-2xl font-poppins font-bold text-[#540814] mb-6">
-              İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI
-            </h2>
-            
-            {/* Video */}
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
-                src="https://www.youtube.com/watch?v=RoHmooscQcQ"
-                title="SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
+      {/* Header Görseli */}
+      <div>
 
-          {/* Video 2 */}
-          <div className="w-full">
-            {/* Başlık */}
-            <h2 className="text-2xl font-poppins font-bold text-[#540814] mb-6">
-              İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI
-            </h2>
-            
-            {/* Video */}
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
-                title="İlişkilerde Yaşanan Sorunlar Nelerdir"
-                src="https://www.youtube.com/watch?v=4vDtqLMNGzI"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+        <DailyPostsSection
+          title="Röportajlar"
+          imageUrl="/roportajlar-header.jpg"
+        />
+      </div>
+
+      {/* Videos Section */}
+      <div className="bg-white min-h-screen px-24 py-20">
+        <div className="max-w-7xl mx-auto">
+          {/* Video Grid - 2 sütun */}
+          <div className="grid grid-cols-2 gap-12">
+            {videos.map((video) => (
+              <VideoCard 
+                key={video.id} 
+                title={video.title} 
+                src={video.src}
+              />
+            ))}
           </div>
         </div>
       </div>
-            <div className="max-w-7xl mx-auto">
-        {/* Video Grid - 2 sütun */}
-        <div className="grid grid-cols-2 gap-12">
-          {/* Video 1 */}
-          <div className="w-full">
-            {/* Başlık */}
-            <h2 className="text-2xl font-poppins font-bold text-[#540814] mb-6">
-              İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI
-            </h2>
-            
-            {/* Video */}
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
-                src="https://www.youtube.com/watch?v=RoHmooscQcQ"
-                title="SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
 
-          {/* Video 2 */}
-          <div className="w-full">
-            {/* Başlık */}
-            <h2 className="text-2xl font-poppins font-bold text-[#540814] mb-6">
-              İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI
-            </h2>
-            
-            {/* Video */}
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
-                title="İlişkilerde Yaşanan Sorunlar Nelerdir"
-                src="https://www.youtube.com/watch?v=4vDtqLMNGzI"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-            <div className="max-w-7xl mx-auto">
-        {/* Video Grid - 2 sütun */}
-        <div className="grid grid-cols-2 gap-12">
-          {/* Video 1 */}
-          <div className="w-full">
-            {/* Başlık */}
-            <h2 className="text-2xl font-poppins font-bold text-[#540814] mb-6">
-              İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI
-            </h2>
-            
-            {/* Video */}
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
-                src="https://www.youtube.com/watch?v=RoHmooscQcQ"
-                title="SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-
-          {/* Video 2 */}
-          <div className="w-full">
-            {/* Başlık */}
-            <h2 className="text-2xl font-poppins font-bold text-[#540814] mb-6">
-              İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI
-            </h2>
-            
-            {/* Video */}
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
-                title="İlişkilerde Yaşanan Sorunlar Nelerdir"
-                src="https://www.youtube.com/watch?v=4vDtqLMNGzI"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-            <div className="max-w-7xl mx-auto">
-        {/* Video Grid - 2 sütun */}
-        <div className="grid grid-cols-2 gap-12">
-          {/* Video 1 */}
-          <div className="w-full">
-            {/* Başlık */}
-            <h2 className="text-2xl font-poppins font-bold text-[#540814] mb-6">
-              İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI
-            </h2>
-            
-            {/* Video */}
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
-                src="https://www.youtube.com/watch?v=RoHmooscQcQ"
-                title="SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-
-          {/* Video 2 */}
-          <div className="w-full">
-            {/* Başlık */}
-            <h2 className="text-2xl font-poppins font-bold text-[#540814] mb-6">
-              İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI
-            </h2>
-            
-            {/* Video */}
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
-                title="İlişkilerde Yaşanan Sorunlar Nelerdir"
-                src="https://www.youtube.com/watch?v=4vDtqLMNGzI"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-              <div className='mt-12 w-full h-auto'>
-        <img src="/footer.png" alt="" />
+      {/* Footer Görseli */}
+      <div className="mt-12 w-full h-auto">
+        <img src="/footer.png" alt="" className="w-full h-auto" />
       </div>
     </>
   );

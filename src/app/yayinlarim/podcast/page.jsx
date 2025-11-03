@@ -1,9 +1,10 @@
+import DailyPostsSection from '@/components/PodcastHead';
 import React from 'react';
 
 const PodcastSection = () => {
   return (<>
           <div className="w-full  h-16 justify-center text-center mt-16">
-            <div><img src="isitsel.png" alt="" /></div>
+            <div> <DailyPostsSection/> </div>
         <p className="text-2xl font-poppins italic text-[#540814]">
         </p>
       </div>

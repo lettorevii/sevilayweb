@@ -1,10 +1,12 @@
 import React from 'react'
+import DailyPostsSection from './HakkimdaHead'
 
 const Hakkimda = () => {
   return (
     <div>
         <div>
-            <img src="hakkimda1.png" alt="" />
+          <DailyPostsSection />
+            
         </div>
       
     </div>

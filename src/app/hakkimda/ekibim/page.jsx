@@ -1,9 +1,11 @@
 import React from 'react';
+import EkibimHead from '../../../components/EkibimHead';
 
 const TeamMemberPage = () => {
   return (
     <div className=" min-h-screen">
-      <img src="/ekibim.png" alt="" className='w-full' />
+      <EkibimHead />
+      
       {/* Üst kısım - Ekip üyeleri */}
       <div className="px-24 py-20">
         {/* Ali Pamir Kaplan */}
@@ -65,37 +67,10 @@ const TeamMemberPage = () => {
         </div>
 
         {/* Beyza Nur Karlı */}
-        <div className="max-w-6xl mx-auto mb-20">
-          <div className="grid grid-cols-2 gap-16 items-start">
-            {/* Sol Taraf - Fotoğraf */}
-            <div className="bg-white p-8 rounded-lg">
-              <img 
-                src="/beyza.png" 
-                alt="Uzm. Klinik Psikolog Beyza Nur Karlı" 
-                className="w-full h-auto object-cover rounded-lg"
-              />
-            </div>
-
-            {/* Sağ Taraf - Bilgiler */}
-            <div>
-              <h1 className="text-4xl font-poppins font-bold text-[#540814] mb-8">
-                Uzm. Klinik Psikolog Beyza Nur Karlı kimdir?
-              </h1>
-              
-              <div className="space-y-4 text-base font-poppins text-gray-800 leading-relaxed">
-                <p>
-                  Beyza Nur Karlı, Boğaziçi Üniversitesi Psikoloji Bölümü'nden mezun olduktan sonra İstanbul Bilgi Üniversitesi Klinik Psikoloji Yüksek Lisans Programı'nı, Çift ve Aile Terapisi alt dalında "Kıskançlık ağı: Bağlanma ve sosyal medya kıskançlığı üzerine bir ikili analiz" başlıklı teziyle tamamlamıştır. Yüksek lisans stajını Bilgi Üniversitesi Psikolojik Danışmanlık Merkezi'nde gerçekleştirmiş; eğitim süresince bireyler, çiftler ve ailelerle danışan deneyimi edinmiştir. Akademik hayatı boyunca çeşitli grup çalışmaları ve projelerde yer almıştır. "Çift İlişkisine Farkındalıkla Bakmak" başlıklı grup çalışmasının eş yürütücülüğünü üstlenmiş, "LGBTİ+ Çift Olmak" projesinde aktif rol almıştır. Ayrıca "Normatif Olmayan Çift İlişkisi" ve "Değişen, Genişleyen Aile Yapısı ve Sınırlar" gibi temalarda düzenlenen seminerlerin hazırlanmasında ve sunumunda görev almıştır. Profesyonel gelişimine önem veren Karlı; DOÇAT bünyesinde Senem Zeytinoğlu Saydam tarafından verilen Duygu Odaklı Çift Terapisi I-II ve Duygu Odaklı Bireysel Terapi eğitimlerini, Didem Doğan'ın "Çift Terapisi Dersleri" eğitimini ve Bilgi Üniversitesi'nde Zeynep Çatay yürütücülüğünde gerçekleşen "Psikoterapistler İçin Bedenlenmiş Etkileşim Becerileri" programını tamamlamıştır. İlişkisel dinamikleri anlamaya duyduğu ilgi, hem akademik çalışmalarını hem de terapistlik yolculuğunu şekillendirmiştir. Terapi pratiğinde sistemik yaklaşımı merkeze almakta, bireyin ilişkisel dünyasını bütüncül bir bakış açısıyla ele almaktadır. Dinamik kuramdan da beslenen bir anlayışla, her danışanla onların özgün hikâyelerine saygı duyarak çalışmayı önemsemektedir.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Alt kısım - Tam genişlik görsel */}
-      <div className="w-[700px] ml-96 py-5">
-        <img src="klinik.png" alt="" />
-        <img src="/aile1.png" alt="Aile" className="w-full h-auto" />
+      <div className="w-[700px] ml-96 py-5">        
       </div>
     </div>
   );

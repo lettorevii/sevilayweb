@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ExternalLink } from 'lucide-react'
+import YazilarimHead from '@/components/YazilarimHead'
 
 const ReadingGroup = ({ id, image, title, description, link }) => {
   // Açıklamayı 3 satırla sınırla
@@ -128,11 +129,8 @@ const ReadingGroups = () => {
       <div className="min-h-screen bg-gray-50 py-12 px-6">
         {/* Header */}
         <div className="max-w-7xl mx-auto mb-12">
-          <div>
-            <img src="/yazilarim.png" alt="Yazılarım" className="mb-4" />
-          </div>
-          <h1 className="text-5xl font-bold text-[#5a1a1a] mb-4">Yazılarım</h1>
-          <p className="text-gray-600 text-lg">Bloglar ve düşüncelerim</p>
+ 
+         
         </div>
 
         {/* Empty State */}
@@ -148,16 +146,11 @@ const ReadingGroups = () => {
   }
 
   return (
+    <>
+    <YazilarimHead />
     <div className="min-h-screen bg-gray-50 py-12 px-6">
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-12">
-        <div>
-          <img src="/yazilarim.png" alt="Yazılarım" className="mb-4" />
-        </div>
-        <h1 className="text-5xl font-bold text-[#5a1a1a] mb-4">Yazılarım</h1>
-        <p className="text-gray-600 text-lg">
-          Blog yazılarım ve düşüncelerim • {groups.length} yazı
-        </p>
       </div>
       
       {/* Blog Cards */}
@@ -190,6 +183,7 @@ const ReadingGroups = () => {
         </p>
       </div>
     </div>
+    </>
   )
 }
 

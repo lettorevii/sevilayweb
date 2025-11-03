@@ -14,11 +14,11 @@ const NewLifeSection = () => {
         </div>
 
         {/* 4 İkon Görseli */}
-        <div className="mb-16">
+        <div className="mb-16 ml-52">
           <img 
             src="/adim.png" 
             alt="4 Adım İkonları" 
-            className="w-full h-auto object-cover"
+            className="w-[85%] h-auto object-cover"
           />
         </div>
 

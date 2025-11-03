@@ -1,11 +1,12 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
-
+import DailyPostsSection from '@/components/ContactHead';
 const ContactPage = () => {
   return (
     <>
     <div>
-      <img src="iletisim.png" alt="" />
+      <DailyPostsSection />
+      
     </div>
     <div className="bg-[#f5f5f5] min-h-screen px-24 py-20">
       <div className="max-w-6xl mx-auto grid grid-cols-2 gap-16">

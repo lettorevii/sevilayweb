@@ -4,8 +4,8 @@ const PodcastSection = () => {
   return (
     <>
       {/* Quote Bölümü */}
-      <div className="w-full h-16 flex justify-center items-center text-center mt-16">
-        <p className="text-2xl font-poppins italic text-[#540814]">
+      <div className="w-full flex justify-center items-center text-center py-8">
+        <p className="text-2xl font-poppins italic text-[#540814] max-w-3xl">
           "Evrendeki en büyük gösteri, sen zihnini keşfettiğin an başlar." <span className="font-bold not-italic">S. Freud</span>
         </p>
       </div>
@@ -17,8 +17,8 @@ const PodcastSection = () => {
           Podcast
         </h2>
         
-        {/* Podcast Görselleri */}
-        <div className="flex flex-col gap-8 max-w-4xl mx-auto">
+        {/* Podcast Görselleri - Yan Yana */}
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* İlk Podcast - Spotify Embed */}
           <div className="w-full">
             <iframe 
