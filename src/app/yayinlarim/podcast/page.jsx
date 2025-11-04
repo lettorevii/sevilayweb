@@ -3,18 +3,20 @@ import React from 'react';
 import Podcast from '@/components/Podcast';
 
 const PodcastSection = () => {
-  return (<>
-          <div className="w-full  h-16 justify-center text-center mt-16">
-            <div> <DailyPostsSection/> </div>
-        <p className="text-2xl font-poppins italic text-[#540814]">
-        </p>
+  return (
+    <>
+      <div>
+        <DailyPostsSection />
       </div>
-    <section className="bg-white px-24 py-20">
-      {/* Başlık */}
-      <h2 className="text-5xl font-poppins font-bold text-[#540814] text-center mb-12">
-        
-      </h2>
-              <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 mt-20 gap-8">
+
+      <div className="w-full justify-center text-center mt-8 md:mt-16">
+        <h2 className="text-3xl md:text-5xl font-poppins font-bold text-[#540814] text-center mb-8 md:mb-12">
+          Podcast
+        </h2>
+      </div>
+
+      <section className="bg-white px-4 md:px-6 lg:px-24 py-8 md:py-20">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 mt-8 md:mt-20 gap-4 md:gap-8">
           {/* İlk Podcast - Spotify Embed */}
           <div className="w-full">
             <iframe 
@@ -32,7 +34,7 @@ const PodcastSection = () => {
           </div>
           
           {/* İkinci Podcast - Spotify Embed */}
-          <div className="w-full ">
+          <div className="w-full">
             <iframe 
               data-testid="embed-iframe" 
               style={{ borderRadius: '12px' }}
@@ -47,8 +49,7 @@ const PodcastSection = () => {
             />
           </div>
         </div>
-      {/* Podcast Görselleri */}
-    </section>
+      </section>
     </>
   );
 };

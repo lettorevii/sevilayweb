@@ -1,7 +1,20 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import DailyPostsSection from '@/components/GorselHead';
 
 const VideosPage = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const videos = [
     {
       id: 1,
@@ -46,12 +59,23 @@ const VideosPage = () => {
   ];
 
   const VideoCard = ({ title, src }) => (
-    
-    <div className="w-full">
+    <div style={{ width: '100%' }}>
       {/* Video */}
-      <div className="relative w-full mb-6" style={{ paddingBottom: '56.25%' }}>
+      <div style={{
+        position: 'relative',
+        width: '100%',
+        paddingBottom: '56.25%',
+        marginBottom: isMobile ? '1rem' : '1.5rem'
+      }}>
         <iframe
-          className="absolute top-0 left-0 w-full h-full rounded-lg"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            borderRadius: '0.5rem'
+          }}
           src={src}
           title={title}
           frameBorder="0"
@@ -61,7 +85,13 @@ const VideosPage = () => {
       </div>
       
       {/* Başlık - Video Altında */}
-      <h2 className="text-2xl font-poppins font-bold text-[#540814]">
+      <h2 style={{
+        fontSize: isMobile ? '16px' : '24px',
+        fontFamily: 'Poppins, sans-serif',
+        fontWeight: 'bold',
+        color: '#540814',
+        lineHeight: '1.3'
+      }}>
         {title}
       </h2>
     </div>
@@ -71,7 +101,6 @@ const VideosPage = () => {
     <>
       {/* Header Görseli */}
       <div>
-
         <DailyPostsSection
           title="Röportajlar"
           imageUrl="/roportajlar-header.jpg"
@@ -79,10 +108,21 @@ const VideosPage = () => {
       </div>
 
       {/* Videos Section */}
-      <div className="bg-white min-h-screen px-24 py-20">
-        <div className="max-w-7xl mx-auto">
-          {/* Video Grid - 2 sütun */}
-          <div className="grid grid-cols-2 gap-12">
+      <div style={{
+        backgroundColor: 'white',
+        minHeight: '100vh',
+        padding: isMobile ? '2rem 1rem' : '5rem 1rem'
+      }}>
+        <div style={{
+          maxWidth: '90rem',
+          margin: '0 auto'
+        }}>
+          {/* Video Grid */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: isMobile ? '1fr' : 'repeat(2, 1fr)',
+            gap: isMobile ? '2rem' : '3rem'
+          }}>
             {videos.map((video) => (
               <VideoCard 
                 key={video.id} 
@@ -95,8 +135,12 @@ const VideosPage = () => {
       </div>
 
       {/* Footer Görseli */}
-      <div className="mt-12 w-full h-auto">
-        <img src="/footer.png" alt="" className="w-full h-auto" />
+      <div style={{
+        marginTop: isMobile ? '2rem' : '3rem',
+        width: '100%',
+        height: 'auto'
+      }}>
+        <img src="/footer.png" alt="" style={{ width: '100%', height: 'auto' }} />
       </div>
     </>
   );

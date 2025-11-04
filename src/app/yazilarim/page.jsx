@@ -6,39 +6,130 @@ import { ExternalLink } from 'lucide-react'
 import YazilarimHead from '@/components/YazilarimHead'
 
 const ReadingGroup = ({ id, image, title, description, link }) => {
-  // Açıklamayı 3 satırla sınırla
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   const truncatedDescription = description
     .split('\n')
     .slice(0, 3)
     .join('\n') + (description.split('\n').length > 3 ? '...' : '')
 
   const content = (
-    <div className="flex items-center bg-white rounded-lg shadow-lg p-10 mb-8 max-w-7xl mx-auto transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] cursor-pointer">
-      {/* Image Container with Hover Effect */}
-      <div className="flex-1 pr-10 overflow-hidden rounded-lg">
+    <div style={{
+      display: 'flex',
+      flexDirection: isMobile ? 'column' : 'row',
+      alignItems: isMobile ? 'stretch' : 'center',
+      backgroundColor: 'white',
+      borderRadius: '0.5rem',
+      boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+      padding: isMobile ? '1.5rem' : '2.5rem',
+      marginBottom: '2rem',
+      maxWidth: '90rem',
+      margin: isMobile ? '0 auto 1.5rem' : '0 auto 2rem',
+      transition: 'all 300ms ease-in-out',
+    }}
+    className="hover:shadow-2xl hover:scale-[1.02]"
+    >
+      {/* Image Container */}
+      <div style={{
+        flex: isMobile ? 'none' : 1,
+        width: isMobile ? '100%' : 'auto',
+        paddingRight: isMobile ? 0 : '2.5rem',
+        paddingBottom: isMobile ? '1.5rem' : 0,
+        overflow: 'hidden',
+        borderRadius: '0.5rem'
+      }}>
         <img 
           src={image || '/placeholder.jpg'} 
           alt={title}
-          className="w-full h-auto rounded-lg object-cover transition-transform duration-500 hover:scale-110"
+          style={{
+            width: '100%',
+            height: isMobile ? '250px' : 'auto',
+            borderRadius: '0.5rem',
+            objectFit: 'cover',
+            transition: 'transform 500ms ease-in-out'
+          }}
+          className="hover:scale-110"
         />
       </div>
       
       {/* Content Container */}
-      <div className="flex-1 pl-10">
-        <div className="flex items-start justify-between mb-3">
-          <h2 className="text-3xl font-bold text-[#5a1a1a] leading-tight transition-colors hover:text-[#8b3a3a] flex-1">
+      <div style={{
+        flex: isMobile ? 'none' : 1,
+        paddingLeft: isMobile ? 0 : '2.5rem',
+        width: isMobile ? '100%' : 'auto'
+      }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'flex-start',
+          justifyContent: 'space-between',
+          marginBottom: '0.75rem',
+          flexDirection: isMobile ? 'column' : 'row',
+          gap: isMobile ? '0.5rem' : 0
+        }}>
+          <h2 style={{
+            fontSize: isMobile ? '18px' : '32px',
+            fontWeight: 'bold',
+            color: '#5a1a1a',
+            lineHeight: '1.2',
+            flex: 1,
+            transition: 'color 300ms ease-in-out'
+          }}
+          className="hover:text-[#8b3a3a]"
+          >
             {title}
           </h2>
           {link && (
-            <ExternalLink size={24} className="text-[#8b3a3a] ml-4 flex-shrink-0" />
+            <ExternalLink size={isMobile ? 20 : 24} style={{ color: '#8b3a3a', flexShrink: 0 }} />
           )}
         </div>
-        <p className="text-gray-700 text-base leading-relaxed mb-6 line-clamp-3">
+        <p style={{
+          color: '#374151',
+          fontSize: isMobile ? '14px' : '16px',
+          lineHeight: '1.5',
+          marginBottom: '1.5rem',
+          display: '-webkit-box',
+          WebkitLineClamp: 3,
+          WebkitBoxOrient: 'vertical',
+          overflow: 'hidden'
+        }}>
           {truncatedDescription}
         </p>
-        <div className="inline-flex items-center text-[#8b3a3a] text-lg font-semibold hover:text-[#5a1a1a] transition-all duration-300 group">
+        <div style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          color: '#8b3a3a',
+          fontSize: isMobile ? '14px' : '18px',
+          fontWeight: '600',
+          transition: 'all 300ms ease-in-out',
+          cursor: 'pointer'
+        }}
+        className="group hover:text-[#5a1a1a]"
+        >
           {link ? 'Devamını Oku' : 'Daha Fazla'}
-          <span className="ml-2 bg-[#8b3a3a] text-white rounded-full w-8 h-8 flex items-center justify-center group-hover:bg-[#5a1a1a] group-hover:ml-4 transition-all duration-300">
+          <span style={{
+            marginLeft: '0.5rem',
+            backgroundColor: '#8b3a3a',
+            color: 'white',
+            borderRadius: '9999px',
+            width: isMobile ? '1.75rem' : '2rem',
+            height: isMobile ? '1.75rem' : '2rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 300ms ease-in-out',
+            fontSize: isMobile ? '14px' : '16px'
+          }}
+          className="group-hover:bg-[#5a1a1a] group-hover:ml-4"
+          >
             →
           </span>
         </div>
@@ -46,7 +137,6 @@ const ReadingGroup = ({ id, image, title, description, link }) => {
     </div>
   )
 
-  // Eğer link varsa yeni sekmede aç, yoksa internal link kullan
   if (link) {
     return (
       <a href={link} target="_blank" rel="noopener noreferrer">
@@ -63,19 +153,61 @@ const ReadingGroup = ({ id, image, title, description, link }) => {
 }
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   return (
-    <div className="flex justify-center items-center gap-3 mt-12 mb-8">
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      gap: isMobile ? '0.5rem' : '0.75rem',
+      marginTop: '3rem',
+      marginBottom: '2rem',
+      flexWrap: 'wrap'
+    }}>
       {[...Array(totalPages)].map((_, index) => {
         const pageNumber = index + 1
         return (
           <button
             key={pageNumber}
             onClick={() => onPageChange(pageNumber)}
-            className={`w-12 h-12 rounded-full text-lg font-semibold transition-all duration-300 ${
-              currentPage === pageNumber
-                ? 'bg-[#8b3a3a] text-white scale-110 shadow-lg'
-                : 'bg-white text-[#8b3a3a] hover:bg-[#8b3a3a] hover:text-white hover:scale-105 shadow-md'
-            }`}
+            style={{
+              width: isMobile ? '36px' : '48px',
+              height: isMobile ? '36px' : '48px',
+              borderRadius: '9999px',
+              fontSize: isMobile ? '12px' : '18px',
+              fontWeight: '600',
+              transition: 'all 300ms ease-in-out',
+              border: 'none',
+              cursor: 'pointer',
+              backgroundColor: currentPage === pageNumber ? '#8b3a3a' : 'white',
+              color: currentPage === pageNumber ? 'white' : '#8b3a3a',
+              boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+              transform: currentPage === pageNumber ? 'scale(1.1)' : 'scale(1)'
+            }}
+            onMouseEnter={(e) => {
+              if (currentPage !== pageNumber) {
+                e.target.style.backgroundColor = '#8b3a3a'
+                e.target.style.color = 'white'
+                e.target.style.transform = 'scale(1.05)'
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (currentPage !== pageNumber) {
+                e.target.style.backgroundColor = 'white'
+                e.target.style.color = '#8b3a3a'
+                e.target.style.transform = 'scale(1)'
+              }
+            }}
           >
             {pageNumber}
           </button>
@@ -89,7 +221,17 @@ const ReadingGroups = () => {
   const [currentPage, setCurrentPage] = useState(1)
   const [groups, setGroups] = useState([])
   const [loading, setLoading] = useState(true)
+  const [isMobile, setIsMobile] = useState(false)
   const itemsPerPage = 3
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   useEffect(() => {
     fetchGroups()
@@ -101,7 +243,6 @@ const ReadingGroups = () => {
       const data = await response.json()
       
       if (data.success) {
-        // Sadece yayınlanmış blogları göster
         const publishedBlogs = data.posts.filter(post => post.status === 'published')
         setGroups(publishedBlogs)
       }
@@ -118,27 +259,56 @@ const ReadingGroups = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 py-12 px-6 flex items-center justify-center">
-        <div className="text-xl text-gray-600">Yükleniyor...</div>
+      <div style={{
+        minHeight: '100vh',
+        backgroundColor: '#f9fafb',
+        padding: isMobile ? '1.5rem' : '3rem 1.5rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}>
+        <div style={{
+          fontSize: isMobile ? '18px' : '20px',
+          color: '#4b5563'
+        }}>Yükleniyor...</div>
       </div>
     )
   }
 
   if (groups.length === 0) {
     return (
-      <div className="min-h-screen bg-gray-50 py-12 px-6">
-        {/* Header */}
-        <div className="max-w-7xl mx-auto mb-12">
- 
-         
-        </div>
-
-        {/* Empty State */}
-        <div className="flex items-center justify-center">
-          <div className="text-center bg-white rounded-lg shadow-lg p-12 max-w-md">
-            <div className="text-6xl mb-4">📝</div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Henüz blog yazısı yok</h2>
-            <p className="text-gray-600">Yakında yeni yazılar eklenecek. Takipte kalın!</p>
+      <div style={{
+        minHeight: '100vh',
+        backgroundColor: '#f9fafb',
+        padding: isMobile ? '1.5rem' : '3rem 1.5rem'
+      }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}>
+          <div style={{
+            textAlign: 'center',
+            backgroundColor: 'white',
+            borderRadius: '0.5rem',
+            boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+            padding: isMobile ? '1.5rem' : '3rem',
+            maxWidth: '28rem'
+          }}>
+            <div style={{
+              fontSize: isMobile ? '48px' : '60px',
+              marginBottom: '1rem'
+            }}>📝</div>
+            <h2 style={{
+              fontSize: isMobile ? '18px' : '24px',
+              fontWeight: 'bold',
+              color: '#111827',
+              marginBottom: '1rem'
+            }}>Henüz blog yazısı yok</h2>
+            <p style={{
+              color: '#4b5563',
+              fontSize: isMobile ? '14px' : '16px'
+            }}>Yakında yeni yazılar eklenecek. Takipte kalın!</p>
           </div>
         </div>
       </div>
@@ -147,42 +317,56 @@ const ReadingGroups = () => {
 
   return (
     <>
-    <YazilarimHead />
-    <div className="min-h-screen bg-gray-50 py-12 px-6">
-      {/* Header */}
-      <div className="max-w-7xl mx-auto mb-12">
-      </div>
-      
-      {/* Blog Cards */}
-      <div className="transition-opacity duration-500">
-        {currentGroups.map((group) => (
-          <ReadingGroup 
-            key={group.id}
-            id={group.id}
-            image={group.image}
-            title={group.title}
-            description={group.description}
-            link={group.link}
+      <YazilarimHead />
+      <div style={{
+        minHeight: '100vh',
+        backgroundColor: '#f9fafb',
+        padding: isMobile ? '1.5rem' : '3rem 1.5rem'
+      }}>
+        {/* Header */}
+        <div style={{
+          maxWidth: '90rem',
+          margin: '0 auto 3rem'
+        }}>
+        </div>
+        
+        {/* Blog Cards */}
+        <div style={{ transitionDuration: '500ms', transitionProperty: 'opacity' }}>
+          {currentGroups.map((group) => (
+            <ReadingGroup 
+              key={group.id}
+              id={group.id}
+              image={group.image}
+              title={group.title}
+              description={group.description}
+              link={group.link}
+            />
+          ))}
+        </div>
+        
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <Pagination 
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
           />
-        ))}
-      </div>
-      
-      {/* Pagination */}
-      {totalPages > 1 && (
-        <Pagination 
-          currentPage={currentPage}
-          totalPages={totalPages}
-          onPageChange={setCurrentPage}
-        />
-      )}
+        )}
 
-      {/* Footer Info */}
-      <div className="max-w-7xl mx-auto mt-12 text-center">
-        <p className="text-gray-500 text-sm">
-          Sayfa {currentPage} / {totalPages}
-        </p>
+        {/* Footer Info */}
+        <div style={{
+          maxWidth: '90rem',
+          margin: '0 auto 3rem',
+          textAlign: 'center'
+        }}>
+          <p style={{
+            color: '#a3a9b5',
+            fontSize: isMobile ? '12px' : '14px'
+          }}>
+            Sayfa {currentPage} / {totalPages}
+          </p>
+        </div>
       </div>
-    </div>
     </>
   )
 }

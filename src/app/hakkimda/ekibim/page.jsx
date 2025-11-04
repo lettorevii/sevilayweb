@@ -3,30 +3,30 @@ import EkibimHead from '../../../components/EkibimHead';
 
 const TeamMemberPage = () => {
   return (
-    <div className=" min-h-screen">
+    <div className="min-h-screen">
       <EkibimHead />
       
       {/* Üst kısım - Ekip üyeleri */}
-      <div className="px-24 py-20">
+      <div style={{ padding: '5rem 1.5rem' }}>
         {/* Ali Pamir Kaplan */}
-        <div className="max-w-6xl mx-auto mb-20">
-          <div className="grid grid-cols-2 gap-16 items-start">
+        <div style={{ marginBottom: '5rem', maxWidth: '90rem', margin: '0 auto 5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', alignItems: 'start' }}>
             {/* Sol Taraf - Fotoğraf */}
-            <div className="bg-white p-8 rounded-lg">
+            <div style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '0.5rem' }}>
               <img 
                 src="/pamir.png" 
                 alt="Uzm. Klinik Psikolog Ali Pamir Kaplan" 
-                className="w-full h-auto object-cover rounded-lg"
+                style={{ width: '100%', height: 'auto', objectFit: 'cover', borderRadius: '0.5rem' }}
               />
             </div>
 
             {/* Sağ Taraf - Bilgiler */}
             <div>
-              <h1 className="text-4xl font-poppins font-bold text-[#540814] mb-8">
+              <h1 style={{ fontSize: 'clamp(20px, 5vw, 32px)', fontFamily: 'Poppins, sans-serif', fontWeight: 'bold', color: '#540814', marginBottom: '2rem' }}>
                 Uzm. Klinik Psikolog Ali Pamir Kaplan kimdir?
               </h1>
               
-              <div className="space-y-4 text-base font-poppins text-gray-800 leading-relaxed">
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', fontSize: 'clamp(14px, 4vw, 16px)', fontFamily: 'Poppins, sans-serif', color: '#333', lineHeight: '1.6' }}>
                 <p>
                   Psikoloji lisans eğitimini Sabancı Üniversitesi'nde, tezli yüksek lisans eğitimini ise Bahçeşehir Üniversitesi Klinik Psikoloji programında tamamladı. "Alkol ve madde bağımlılığında işlevselliğin karşılaştırılması ve sosyoekonomik etmenler, tercih maddesi ve bağımlılık şiddetinin işlevsellik üzerindeki yordayıcı etkisi" başlıklı teziyle mezun oldu. Şu anda Exeter Üniversitesi'nde Psikanalitik ve Psikodinamik Psikoterapiler üzerine doktora çalışmalarına devam etmektedir.
                 </p>
@@ -40,24 +40,24 @@ const TeamMemberPage = () => {
         </div>
 
         {/* Melike Müdebbire Erdem */}
-        <div className="max-w-6xl mx-auto mb-20">
-          <div className="grid grid-cols-2 gap-16 items-start">
+        <div style={{ marginBottom: '5rem', maxWidth: '90rem', margin: '0 auto 5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', alignItems: 'start' }}>
             {/* Sol Taraf - Fotoğraf */}
-            <div className="bg-white p-8 rounded-lg">
+            <div style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '0.5rem' }}>
               <img 
                 src="/melike.png" 
                 alt="Stajyer Psikolog Melike Müdebbire Erdem" 
-                className="w-full h-auto object-cover rounded-lg"
+                style={{ width: '100%', height: 'auto', objectFit: 'cover', borderRadius: '0.5rem' }}
               />
             </div>
 
             {/* Sağ Taraf - Bilgiler */}
             <div>
-              <h1 className="text-4xl font-poppins font-bold text-[#540814] mb-8">
+              <h1 style={{ fontSize: 'clamp(20px, 5vw, 32px)', fontFamily: 'Poppins, sans-serif', fontWeight: 'bold', color: '#540814', marginBottom: '2rem' }}>
                 Stajyer Psikolog Melike Müdebbire Erdem kimdir?
               </h1>
               
-              <div className="space-y-4 text-base font-poppins text-gray-800 leading-relaxed">
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', fontSize: 'clamp(14px, 4vw, 16px)', fontFamily: 'Poppins, sans-serif', color: '#333', lineHeight: '1.6' }}>
                 <p>
                   Melike Müdebbire Erdem, İstanbul Medipol Üniversitesi Psikoloji Bölümü (%100 İngilizce) 4. sınıf öğrencisidir. Klinik psikolojiye ilgi duymakta ve bu alanda hem akademik hem de uygulamalı deneyimler kazanmaktadır. Hastane, klinik ve insan kaynakları gibi farklı alanlarda staj yaparak mesleki gelişimini çeşitlendirmiştir. Akademik alanda, TÜBİTAK 2209-A projesinde yürütücü olarak görev almaktadır. Projesi, "Türkiye Bağımlılıkla Mücadele Akran Uygulayıcı Eğitiminin Standartlarının Belirlenmesi ve Değerlendirilmesi" başlığını taşımaktadır. Ayrıca, yazarları arasında yer aldığı "Üniversite Öğrencilerinde Problemli Pornografi Kullanımı ve İlişkili Faktörler" adlı bildiri, 8. Uluslararası / 26. Ulusal Halk Sağlığı Kongresi'nde yayımlanmıştır. Erdem, gönüllülük çalışmalarına da önem vermektedir. Yeşilay Beykoz Şubesi'nde yönetim kurulu üyesi olarak görev almakta, özellikle davranışsal bağımlılıklar alanında yürütülen sosyal sorumluluk projelerinde aktif rol üstlenmektedir. Mesleki gelişimini desteklemek amacıyla çeşitli eğitim ve sertifika programlarına katılmıştır. Biruni Üniversitesi'nden "Travma ve Krize Müdahale Eğitimi Uygulayıcı Sertifikası", Evokulu Derneği'nden "Afet Psikolojik Destek Programı Uygulayıcı Sertifikası" ve Rehber Klinik'ten "Temel Psikoloji Eğitimi Bitirme Sertifikası" sahibidir.
                 </p>
@@ -70,7 +70,7 @@ const TeamMemberPage = () => {
       </div>
 
       {/* Alt kısım - Tam genişlik görsel */}
-      <div className="w-[700px] ml-96 py-5">        
+      <div style={{ display: 'none' }}>        
       </div>
     </div>
   );

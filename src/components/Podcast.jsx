@@ -1,11 +1,13 @@
+'use client';
+
 import React from 'react';
 
 const PodcastSection = () => {
   return (
     <>
       {/* Quote Bölümü */}
-      <div className="w-full bg-[f7f3f0] flex justify-center items-center text-center py-8">
-        <p className="text-2xl font-poppins italic text-[#540814] max-w-3xl">
+      <div className="w-full bg-[#f7f3f0] flex justify-center items-center text-center py-8">
+        <p className="text-2xl font-poppins italic text-[#540814] max-w-3xl px-4 md:px-0">
           "Evrendeki en büyük gösteri, sen zihnini keşfettiğin an başlar." <span className="font-bold not-italic">S. Freud</span>
         </p>
       </div>
@@ -17,10 +19,10 @@ const PodcastSection = () => {
           Podcast
         </h2>
         
-        {/* Podcast Görselleri - Yan Yana */}
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Podcast Görselleri */}
+        <div className="max-w-6xl mx-auto grid grid-cols-1 gap-8">
           {/* İlk Podcast - Spotify Embed */}
-          <div className="w-full">
+          <div className="w-full flex justify-center">
             <iframe 
               data-testid="embed-iframe" 
               style={{ borderRadius: '12px' }}
@@ -36,7 +38,7 @@ const PodcastSection = () => {
           </div>
           
           {/* İkinci Podcast - Spotify Embed */}
-          <div className="w-full">
+          <div className="w-full flex justify-center">
             <iframe 
               data-testid="embed-iframe" 
               style={{ borderRadius: '12px' }}
@@ -52,6 +54,32 @@ const PodcastSection = () => {
           </div>
         </div>
       </section>
+
+      {/* Mobil Only Styles */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          section {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+          }
+
+          h2 {
+            font-size: 28px;
+            margin-bottom: 2rem;
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 1.5;
+          }
+
+          iframe {
+            max-width: 100%;
+          }
+        }
+      `}</style>
     </>
   );
 };

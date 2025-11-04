@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
         <AuthProvider>
           {!isAdminPage && <Header />}
           {!isAdminPage && <NavBar />}
+          
           {children}
           {!isAdminPage && <Footer />}
         </AuthProvider>

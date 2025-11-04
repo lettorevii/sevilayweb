@@ -14,17 +14,19 @@ const DailyPostsSection = () => {
         <div className="absolute inset-0 bg-white/30"></div>
       </div>
 
-      <div className="max-w-4xl mx-auto text-center flex flex-col items-center gap-3">
+      <div className="max-w-4xl mx-auto text-center">
         {/* Üst Görsel - Kalem Çizimi */}
-        <img 
-          src="/isitselhead.png"
-          alt="Pen Illustration"
-          className="w-48 h-auto"
-        />
+        <div className="mb-6">
+          <img 
+            src="/isitselhead.png"
+            alt="Pen Illustration"
+            className="w-64 h-auto mx-auto"
+          />
+        </div>
 
         {/* Başlık - Poppins Font, #540814 Renk */}
         <h1 className="text-3xl font-poppins font-bold text-[#540814] tracking-wide">
-          Podcast
+          Güncel Yazılarım
         </h1>
       </div>
     </section>

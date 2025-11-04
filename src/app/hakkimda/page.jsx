@@ -35,9 +35,15 @@ const AboutPage = () => {
       <Hakkimda />
       
       <AboutSection />
+      
       {/* Deneyim Listesi */}
-      <div className="w-full bg-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <div className="w-full  bg-white py-12">
+        <div className="mx-auto max-w-[1440px] px-4 md:px-6 lg:px-8">
+          {/* Başlık */}
+          <h2 style={{ fontSize: '18pt' }} className="font-bold text-[#5C2E3A] mb-8">
+            Eğitim ve Deneyimlerim
+          </h2>
+
           <div className="space-y-4">
             {experiences.map((exp, index) => (
               <div key={exp.id} className="flex gap-4 sm:gap-6">
@@ -56,7 +62,7 @@ const AboutPage = () => {
                 {/* Açıklama */}
                 <div className="flex-1">
                   <p 
-                    className="text-gray-800 leading-relaxed text-lg"
+                    className="text-gray-800 leading-relaxed"
                     style={{ 
                       fontFamily: "'Gotham', sans-serif", 
                       fontWeight: 400,
@@ -72,8 +78,9 @@ const AboutPage = () => {
         </div>
       </div>
 
+      {/* Footer */}
       <div className='mt-12 w-full h-auto'>
-        <img src="/footer.png" alt="" />
+        <img src="/footer.png" alt="" className="w-full" />
       </div>
     </div>
   )

@@ -2,8 +2,8 @@ import React from 'react';
 
 const BlogSection = () => {
   return (
-    <section className="bg-white px-24 py-20">
-      <div className="max-w-4xl mx-auto">
+    <section className="bg-white py-20">
+      <div className="mx-auto max-w-[1000px] px-4 md:px-6 lg:px-8">
         {/* Başlık ve Dekoratif Çizgi */}
         <div className="text-center mb-12">
           <h2 className="text-5xl font-poppins font-bold text-[#540814] mb-4">
