@@ -167,7 +167,7 @@ const WorkAreasSection = () => {
             padding-bottom: 2rem;
           }
 
-          section div[className*="max-w-[1440px]"],
+          section div[className*="max-w-[1140px]"],
           section div[className*="max-w-[1140px]"] {
             padding-left: 1rem;
             padding-right: 1rem;

@@ -11,7 +11,7 @@ const Footer = () => {
             <h3 style={{ fontSize: 'clamp(20px, 5vw, 18pt)' }} className="font-poppins font-bold text-[#540814] mb-4 md:mb-6">
               Dr. Sevilay<br />Abudaram
             </h3>
-            <p style={{ fontSize: 'clamp(12px, 3vw, 14pt)' }} className="font-poppins text-[#540814] leading-relaxed">
+            <p style={{ fontSize: 'clamp(12px, 3vw, 12pt)' }} className="font-poppins text-[#540814] leading-relaxed">
               Lisans derecemi Boğaziçi Üniversitesi Psikolojik Danışmanlık bölümünden yüksek onur derecesiyle aldım. Uzmanlığımı Klinik Psikoloji Yüksek Lisans programını (yetişkin) tamamlayarak İstanbul Bilgi Üniversitesi'nden aldım. Doktora derecemi ise Klinik Uygulama programını tamamlayarak İngiltere'den University of Exeter'den aldım.
             </p>
           </div>
@@ -23,27 +23,27 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 md:space-y-3">
               <li>
-                <a href="/hakkimda" style={{ fontSize: 'clamp(12px, 3vw, 14pt)' }} className="font-poppins text-[#540814] hover:opacity-70 transition-opacity">
+                <a href="/hakkimda" style={{ fontSize: 'clamp(12px, 3vw, 12pt)' }} className="font-poppins text-[#540814] hover:opacity-70 transition-opacity">
                   Hakkımda
                 </a>
               </li>
               <li>
-                <a href="/yazilarim" style={{ fontSize: 'clamp(12px, 3vw, 14pt)' }} className="font-poppins text-[#540814] hover:opacity-70 transition-opacity">
+                <a href="/yazilarim" style={{ fontSize: 'clamp(12px, 3vw, 12pt)' }} className="font-poppins text-[#540814] hover:opacity-70 transition-opacity">
                   Yazılarım
                 </a>
               </li>
               <li>
-                <a href="/duyurular" style={{ fontSize: 'clamp(12px, 3vw, 14pt)' }} className="font-poppins text-[#540814] hover:opacity-70 transition-opacity">
+                <a href="/duyurular" style={{ fontSize: 'clamp(12px, 3vw, 12pt)' }} className="font-poppins text-[#540814] hover:opacity-70 transition-opacity">
                   Duyurular
                 </a>
               </li>
               <li>
-                <a href="/bize-ulasin" style={{ fontSize: 'clamp(12px, 3vw, 14pt)' }} className="font-poppins text-[#540814] hover:opacity-70 transition-opacity">
+                <a href="/bize-ulasin" style={{ fontSize: 'clamp(12px, 3vw, 12pt)' }} className="font-poppins text-[#540814] hover:opacity-70 transition-opacity">
                   Bize Ulaşın
                 </a>
               </li>
               <li>
-                <a href="/randevu-al" style={{ fontSize: 'clamp(12px, 3vw, 14pt)' }} className="font-poppins text-[#540814] hover:opacity-70 transition-opacity">
+                <a href="/randevu-al" style={{ fontSize: 'clamp(12px, 3vw, 12pt)' }} className="font-poppins text-[#540814] hover:opacity-70 transition-opacity">
                   Randevu Al
                 </a>
               </li>
