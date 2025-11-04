@@ -9,7 +9,7 @@ const MediaPage = () => {
       </div>
 
       <div className="bg-white min-h-screen px-4 md:px-24 py-12 md:py-20">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-[1140px] mx-auto">
           
           {/* Grid - 2x2 Responsive */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">

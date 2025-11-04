@@ -10,7 +10,7 @@ const ContactPage = () => {
       </div>
 
       <div className="bg-[#f5f5f5] min-h-screen py-12 md:py-20">
-        <div className="mx-auto max-w-[1440px] px-4 md:px-6 lg:px-8">
+        <div className="mx-auto max-w-[1140px] px-4 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
             {/* Sol Taraf - Form */}
             <div>

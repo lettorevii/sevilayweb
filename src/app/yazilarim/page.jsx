@@ -32,7 +32,7 @@ const ReadingGroup = ({ id, image, title, description, link }) => {
       boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
       padding: isMobile ? '1.5rem' : '2.5rem',
       marginBottom: '2rem',
-      maxWidth: '90rem',
+      maxWidth: '1140px',
       margin: isMobile ? '0 auto 1.5rem' : '0 auto 2rem',
       transition: 'all 300ms ease-in-out',
     }}
@@ -325,7 +325,7 @@ const ReadingGroups = () => {
       }}>
         {/* Header */}
         <div style={{
-          maxWidth: '90rem',
+          maxWidth: '1140px',
           margin: '0 auto 3rem'
         }}>
         </div>
@@ -355,7 +355,7 @@ const ReadingGroups = () => {
 
         {/* Footer Info */}
         <div style={{
-          maxWidth: '90rem',
+          maxWidth: '1140px',
           margin: '0 auto 3rem',
           textAlign: 'center'
         }}>

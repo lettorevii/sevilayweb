@@ -16,7 +16,7 @@ const PodcastSection = () => {
       </div>
 
       <section className="bg-white px-4 md:px-6 lg:px-24 py-8 md:py-20">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 mt-8 md:mt-20 gap-4 md:gap-8">
+        <div className="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-2 mt-8 md:mt-20 gap-4 md:gap-8">
           {/* İlk Podcast - Spotify Embed */}
           <div className="w-full">
             <iframe 

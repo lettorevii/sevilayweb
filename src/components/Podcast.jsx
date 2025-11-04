@@ -13,14 +13,14 @@ const PodcastSection = () => {
       </div>
 
       {/* Podcast Bölümü */}
-      <section className="bg-white px-24 py-20">
+      <section className="bg-white px-4 md:px-24 py-8 md:py-20">
         {/* Başlık */}
-        <h2 className="text-5xl font-poppins font-bold text-[#540814] text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#540814] text-center mb-8 md:mb-12">
           Podcast
         </h2>
         
         {/* Podcast Görselleri */}
-        <div className="max-w-6xl mx-auto grid grid-cols-1 gap-8">
+        <div className="max-w-[1140px] mx-auto grid grid-cols-1 gap-8">
           {/* İlk Podcast - Spotify Embed */}
           <div className="w-full flex justify-center">
             <iframe 
@@ -66,7 +66,7 @@ const PodcastSection = () => {
           }
 
           h2 {
-            font-size: 28px;
+            font-size: 24px;
             margin-bottom: 2rem;
           }
 

@@ -66,7 +66,7 @@ const WorkAreasSection = () => {
       </h3>
 
       {/* Açıklama */}
-      <p style={{ fontSize: '14pt', lineHeight: '1.4' }} className="text-gray-700 mb-3">
+      <p style={{ fontSize: '12pt', lineHeight: '1.4' }} className="text-gray-700 mb-3">
         {description}
       </p>
 
@@ -84,24 +84,24 @@ const WorkAreasSection = () => {
   return (
     <>
       {/* Çalışma Alanları Bölümü */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-[1440px] px-24">
+      <section className="bg-white py-12 md:py-20">
+        <div className="mx-auto max-w-[1140px] px-4 md:px-6 lg:px-24">
           {/* Başlık */}
           <div className="text-center mb-6">
-            <h2 style={{ fontSize: '33.5pt' }} className="relative font-bold text-[#5C2E3A]">
+            <h2 style={{ fontSize: 'clamp(24px, 6vw, 33.5pt)' }} className="relative font-bold text-[#5C2E3A]">
               Çalışma Alanlarım
             </h2>
           </div>
           
           {/* Dekoratif Çizgi */}
-          <div className="flex justify-center mb-16 hidden md:flex">
+          <div className="flex justify-center mb-8 md:mb-16 hidden md:flex">
             <img src="/cizgi5.png" alt="" className='w-72'/>
           </div>
           
           {/* Üst Sıra - 3 Kart */}
-          <div className="flex justify-center gap-16 mb-16 flex-wrap">
+          <div className="flex justify-center gap-6 md:gap-16 mb-8 md:mb-16 flex-wrap">
             {topServices.map((service) => (
-              <div key={service.id} className="w-[250px]">
+              <div key={service.id} className="w-[270px]">
                 <ServiceCard 
                   title={service.title}
                   description={service.description}
@@ -113,9 +113,9 @@ const WorkAreasSection = () => {
           </div>
           
           {/* Alt Sıra - 3 Kart */}
-          <div className="flex justify-center gap-16 flex-wrap">
+          <div className="flex justify-center gap-6 md:gap-16 flex-wrap">
             {bottomServices.map((service) => (
-              <div key={service.id} className="w-[250px]">
+              <div key={service.id} className="w-[270px]">
                 <ServiceCard 
                   title={service.title}
                   description={service.description}
@@ -129,9 +129,9 @@ const WorkAreasSection = () => {
       </section>
 
       {/* Görseller ve Quote Bölümü */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-[1440px] px-24">
-          <div className="flex gap-16 items-center flex-col md:flex-row">
+      <section className="bg-white py-12 md:py-20">
+        <div className="mx-auto max-w-[1140px] px-4 md:px-6 lg:px-24">
+          <div className="flex gap-6 md:gap-16 items-center flex-col md:flex-row">
             {/* Sol Taraf - Görsel */}
             <div className="flex-1 w-full">
               <img 
@@ -145,11 +145,11 @@ const WorkAreasSection = () => {
             <div className="flex-1 flex items-center justify-center w-full">
               <div className="text-center">
                 {/* Quote */}
-                <p style={{ fontSize: '24pt', lineHeight: '1.6' }} className="italic text-[#5C2E3A] mb-6">
+                <p style={{ fontSize: 'clamp(18px, 5vw, 24pt)', lineHeight: '1.6' }} className="italic text-[#5C2E3A] mb-6">
                   "Sanat, çocukluk tecrübelerinin büyüklüğe aktarılmasıdır."
                 </p>
                 {/* Yazar */}
-                <p style={{ fontSize: '24pt' }} className="font-bold text-[#5C2E3A]">
+                <p style={{ fontSize: 'clamp(18px, 5vw, 24pt)' }} className="font-bold text-[#5C2E3A]">
                   <br />
                   S. Freud
                 </p>
@@ -167,7 +167,8 @@ const WorkAreasSection = () => {
             padding-bottom: 2rem;
           }
 
-          section div[className*="max-w-[1440px]"] {
+          section div[className*="max-w-[1440px]"],
+          section div[className*="max-w-[1140px]"] {
             padding-left: 1rem;
             padding-right: 1rem;
           }
@@ -177,11 +178,12 @@ const WorkAreasSection = () => {
             margin-bottom: 1rem;
           }
 
-          .w-\[250px\] {
+          .w-\[280px\] {
             width: calc(50% - 0.5rem);
             min-width: 140px;
           }
 
+          div[className*="gap-6"],
           div[className*="gap-16"] {
             gap: 0.5rem;
           }

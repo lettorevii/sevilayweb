@@ -38,7 +38,7 @@ const AboutPage = () => {
       
       {/* Deneyim Listesi */}
       <div className="w-full  bg-white py-12">
-        <div className="mx-auto max-w-[1440px] px-4 md:px-6 lg:px-8">
+        <div className="mx-auto max-w-[1140px] px-4 md:px-6 lg:px-8">
           {/* Başlık */}
           <h2 style={{ fontSize: '18pt' }} className="font-bold text-[#5C2E3A] mb-8">
             Eğitim ve Deneyimlerim
@@ -51,7 +51,7 @@ const AboutPage = () => {
                 <div className="flex-shrink-0 pt-1">
                   <button
                     onClick={() => setSelectedIndex(selectedIndex === index ? null : index)}
-                    className="w-6 h-6 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-gray-600 transition-colors duration-200 flex-shrink-0"
+                    className="w-4 h-4 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-gray-600 transition-colors duration-200 flex-shrink-0"
                   >
                     {selectedIndex === index && (
                       <div className="w-3 h-3 rounded-full bg-gray-600"></div>
@@ -64,9 +64,9 @@ const AboutPage = () => {
                   <p 
                     className="text-gray-800 leading-relaxed"
                     style={{ 
-                      fontFamily: "'Gotham', sans-serif", 
+                      fontFamily: "'Poppins', sans-serif", 
                       fontWeight: 400,
-                      fontSize: '14pt'
+                      fontSize: '12pt'
                     }}
                   >
                     {exp.description}

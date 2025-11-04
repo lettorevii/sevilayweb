@@ -7,9 +7,9 @@ const TeamMemberPage = () => {
       <EkibimHead />
       
       {/* Üst kısım - Ekip üyeleri */}
-      <div style={{ padding: '5rem 1.5rem' }}>
+      <div style={{ padding: '5rem 1.5rem', maxWidth: '1140px', margin: '0 auto' }}>
         {/* Ali Pamir Kaplan */}
-        <div style={{ marginBottom: '5rem', maxWidth: '90rem', margin: '0 auto 5rem' }}>
+        <div style={{ marginBottom: '5rem' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', alignItems: 'start' }}>
             {/* Sol Taraf - Fotoğraf */}
             <div style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '0.5rem' }}>
@@ -40,7 +40,7 @@ const TeamMemberPage = () => {
         </div>
 
         {/* Melike Müdebbire Erdem */}
-        <div style={{ marginBottom: '5rem', maxWidth: '90rem', margin: '0 auto 5rem' }}>
+        <div style={{ marginBottom: '5rem' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', alignItems: 'start' }}>
             {/* Sol Taraf - Fotoğraf */}
             <div style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '0.5rem' }}>

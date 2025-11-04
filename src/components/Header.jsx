@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
   return (
     <header className="bg-[#EEE5E0] px-4 md:px-6 lg:px-8 py-3 md:py-4 lg:py-5">
-      <div className="mx-auto max-w-[1440px]">
+      <div className="mx-auto max-w-[1140px]">
         <div className="flex flex-col md:flex-row gap-3 md:gap-4 lg:gap-8 items-start md:items-center justify-between">
           {/* Adres - Mobilde gizle veya küçült */}
           <div style={{ fontSize: 'clamp(10px, 2vw, 14px)' }} className="text-[#540814] font-montserrat line-clamp-2 md:line-clamp-none">

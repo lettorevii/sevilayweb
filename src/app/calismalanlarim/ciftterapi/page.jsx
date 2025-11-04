@@ -21,7 +21,7 @@ const CoupleTherapyPage = () => {
       <DailyPostsSection />
 
       <div className="bg-white min-h-screen py-8 md:py-20 font-poppins">
-        <div className="mx-auto max-w-[1440px] px-4 md:px-6 lg:px-8">
+        <div className="mx-auto max-w-[1140px] px-4 md:px-6 lg:px-8">
           
           {/* Bölüm 1: Çift Terapisti Ne Yapar */}
           <div className="mb-8 md:mb-20">

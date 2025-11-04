@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Linkedin, Youtube } from 'lucide-react';
 const Footer = () => {
   return (
     <footer className="bg-[#EEE5E0] px-4 md:px-6 lg:px-8 py-8 md:py-12 lg:py-16">
-      <div className="mx-auto max-w-[1440px]">
+      <div className="mx-auto max-w-[1140px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
           {/* Sol Sütun - Dr. Sevilay Abudaram */}
           <div>

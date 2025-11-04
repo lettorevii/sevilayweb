@@ -114,7 +114,7 @@ const VideosPage = () => {
         padding: isMobile ? '2rem 1rem' : '5rem 1rem'
       }}>
         <div style={{
-          maxWidth: '90rem',
+          maxWidth: '1140px',
           margin: '0 auto'
         }}>
           {/* Video Grid */}

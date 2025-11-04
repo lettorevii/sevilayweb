@@ -30,7 +30,7 @@ const NewLifeSection = () => {
 
   return (
     <section className="bg-[#f5f3f0] px-24 py-20 md:px-24 md:py-20" style={{ fontFamily: 'Poppins, sans-serif' }}>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1140px] mx-auto">
         {/* Başlık */}
         <div className="text-center mb-16 relative">
           <h2 style={{ fontSize: '33.5pt', fontFamily: 'Poppins, sans-serif', fontWeight: 'bold', color: '#540814' }} className="mb-4">
@@ -68,7 +68,7 @@ const NewLifeSection = () => {
                 </h3>
 
                 {/* Açıklama */}
-                <p style={{ fontSize: '14pt', lineHeight: '1.4', fontFamily: 'Poppins, sans-serif' }} className="text-gray-700 text-center text-xs md:text-sm">
+                <p style={{ fontSize: '12pt', lineHeight: '1.4', fontFamily: 'Poppins, sans-serif' }} className="text-gray-700 text-center text-xs md:text-sm">
                   {step.description}
                 </p>
               </div>
