@@ -11,25 +11,25 @@ const NewLifeSection = () => {
     {
       id: 2,
       title: 'Terapi ve Danışmanlık',
-      image: '/terapive.png',
+      image: '/homenew.png',
       description: 'Terapi ve Danışmanlık Seansları: Bireysel ihtiyaçlara yönelik özelleştirilmiş terapi seansları.'
     },
     {
       id: 3,
       title: 'İlerleme ve Takip',
-      image: '/ilerleme.png',
+      image: '/homenew1.png',
       description: 'İlerleme Takibi: Terapötik süreç boyunca kaydedilen gelişmelerin düzenli olarak değerlendirilmesi.'
     },
     {
       id: 4,
       title: 'Kapanış ve Destek',
-      image: '/kapanis.png',
+      image: '/homenew2.png',
       description: 'Sürecin Kapanışı: Başarıyla tamamlanan terapötik sürecin nasıl sonlandırılacağı ve ardından izlenecek adımlar.'
     }
   ];
 
   return (
-    <section className="bg-[#f5f3f0] px-24 py-20 md:px-24 md:py-20" style={{ fontFamily: 'Poppins, sans-serif' }}>
+    <section className="bg-[#f7f3f0] px-24 py-20 md:px-24 md:py-20" style={{ fontFamily: 'Poppins, sans-serif' }}>
       <div className="max-w-[1140px] mx-auto">
         {/* Başlık */}
         <div className="text-center mb-16 relative">

@@ -2,44 +2,46 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-to-r from-white to-[#EEE5E0] px-24 flex items-center justify-between overflow-hidden">
-      {/* Sol Taraf - Metin ve Buton */}
-      <div className="flex flex-col gap-8 ml-24 max-w-xl z-10">
-        <h1 className="text-6xl font-poppins text-[#540814] leading-tight">
-          Sağlıklı iletişim,<br />
-          <span className='font-bold'>güçlü bağlar </span>
-        </h1>
+    <section className="relative bg-gradient-to-r from-white to-[#EEE5E0] px-4 md:px-12 lg:px-24 flex items-center justify-between overflow-hidden">
+      <div className="w-full max-w-[1140px] mx-auto flex items-center justify-between">
+        {/* Sol Taraf - Metin ve Buton */}
+        <div className="flex flex-col gap-8 md:ml-6 lg:ml-24 max-w-xl z-10">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-poppins text-[#540814] leading-tight">
+            Sağlıklı iletişim,<br />
+            <span className='font-bold'>güçlü bağlar </span>
+          </h1>
+          
+          <button className="bg-[#540814] text-white font-poppins px-8 py-4 rounded hover:bg-[#3a0509] transition-colors w-fit text-lg font-medium">
+            Randevu Al
+          </button>
+          
+          {/* Kelebek Görseli - Desktop Only */}
+          <div className="relative px-56 mt-4 hidden md:block">
+            <img 
+              src="/kelebek.png" 
+              alt="Butterfly decoration" 
+              className="w-[900px]"
+            />
+          </div>
+        </div>
         
-        <button className="bg-[#540814] text-white font-poppins px-8 py-4 rounded hover:bg-[#3a0509] transition-colors w-fit text-lg font-medium">
-          Randevu Al
-        </button>
-        
-        {/* Kelebek Görseli - Desktop Only */}
-        <div className="relative px-56 mt-4 hidden md:block">
+        {/* Sağ Taraf - İnsan Fotoğrafı */}
+        <div className="relative w-[400px] mr-52 z-10 hidden md:block flex-shrink-0">
           <img 
-            src="/kelebek.png" 
-            alt="Butterfly decoration" 
-            className="w-[900px]"
+            src="/insan.png" 
+            alt="Dr. Sevilay Abudaram" 
+            className="w-[600px] h-auto object-cover rounded-lg"
           />
         </div>
-      </div>
-      
-      {/* Sağ Taraf - İnsan Fotoğrafı */}
-      <div className="relative w-[400px] mr-52 z-10 hidden md:block">
-        <img 
-          src="/insan.png" 
-          alt="Dr. Sevilay Abudaram" 
-          className="w-[600px] h-auto object-cover rounded-lg"
-        />
-      </div>
 
-      {/* Mobil Only - Fotoğraf */}
-      <div className="relative w-full md:hidden z-10 order-first">
-        <img 
-          src="/insan.png" 
-          alt="Dr. Sevilay Abudaram" 
-          className="w-full h-auto object-cover rounded-lg"
-        />
+        {/* Mobil Only - Fotoğraf */}
+        <div className="relative w-full md:hidden z-10 order-first">
+          <img 
+            src="/insan.png" 
+            alt="Dr. Sevilay Abudaram" 
+            className="w-full h-auto object-cover rounded-lg"
+          />
+        </div>
       </div>
 
       {/* Mobil Only Styles */}

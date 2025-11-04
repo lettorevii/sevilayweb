@@ -1,20 +1,9 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import DailyPostsSection from '@/components/GorselHead';
 
 const VideosPage = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
   const videos = [
     {
       id: 1,
@@ -59,23 +48,11 @@ const VideosPage = () => {
   ];
 
   const VideoCard = ({ title, src }) => (
-    <div style={{ width: '100%' }}>
+    <div className="w-full">
       {/* Video */}
-      <div style={{
-        position: 'relative',
-        width: '100%',
-        paddingBottom: '56.25%',
-        marginBottom: isMobile ? '1rem' : '1.5rem'
-      }}>
+      <div className="relative w-full pb-[56.25%] mb-4 md:mb-6">
         <iframe
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            borderRadius: '0.5rem'
-          }}
+          className="absolute top-0 left-0 w-full h-full rounded-lg"
           src={src}
           title={title}
           frameBorder="0"
@@ -85,15 +62,9 @@ const VideosPage = () => {
       </div>
       
       {/* Başlık - Video Altında */}
-      <h2 style={{
-        fontSize: isMobile ? '16px' : '24px',
-        fontFamily: 'Poppins, sans-serif',
-        fontWeight: 'bold',
-        color: '#540814',
-        lineHeight: '1.3'
-      }}>
+      <h3 className="text-base md:text-xl font-poppins text-[#540814] leading-relaxed">
         {title}
-      </h2>
+      </h3>
     </div>
   );
 
@@ -108,21 +79,10 @@ const VideosPage = () => {
       </div>
 
       {/* Videos Section */}
-      <div style={{
-        backgroundColor: 'white',
-        minHeight: '100vh',
-        padding: isMobile ? '2rem 1rem' : '5rem 1rem'
-      }}>
-        <div style={{
-          maxWidth: '1140px',
-          margin: '0 auto'
-        }}>
+      <div className="bg-white min-h-screen px-4 md:px-6 lg:px-24 py-12 md:py-20">
+        <div className="max-w-[1140px] mx-auto">
           {/* Video Grid */}
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: isMobile ? '1fr' : 'repeat(2, 1fr)',
-            gap: isMobile ? '2rem' : '3rem'
-          }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
             {videos.map((video) => (
               <VideoCard 
                 key={video.id} 
@@ -135,12 +95,8 @@ const VideosPage = () => {
       </div>
 
       {/* Footer Görseli */}
-      <div style={{
-        marginTop: isMobile ? '2rem' : '3rem',
-        width: '100%',
-        height: 'auto'
-      }}>
-        <img src="/footer.png" alt="" style={{ width: '100%', height: 'auto' }} />
+      <div className="mt-8 md:mt-12 w-full h-auto">
+        <img src="/footer.png" alt="" className="w-full h-auto" />
       </div>
     </>
   );

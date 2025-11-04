@@ -90,13 +90,13 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-white px-24 py-6 flex justify-between items-center border-b border-gray-200 relative">
-        <Link href="/" className="text-3xl font-poppins text-[#540814] font-semibold hover:opacity-80 transition-opacity hidden md:block">
-          Dr. Sevilay<br /><span className='px-10'>Abudaram</span>
+        <Link href="/" className="w-[200px] h-auto font-poppins text-[#540814]   hidden md:block">
+          <img src="/logog.png" alt="" />
         </Link>
 
         {/* Mobile Logo */}
         <Link href="/" className="text-xl font-poppins text-[#540814] font-semibold hover:opacity-80 transition-opacity md:hidden">
-          Dr. Sevilay Abudaram
+          <img src="/logog.png" alt="" />
         </Link>
         
         {/* Desktop Menu */}
