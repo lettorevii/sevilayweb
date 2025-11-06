@@ -2,11 +2,11 @@
   "name": "sevilay-web",
   "version": "0.1.0",
   "private": true,
-"scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start -p $PORT"
-},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT"
+  },
   "dependencies": {
     "lucide-react": "^0.548.0",
     "next": "^15.0.2",
@@ -14,6 +14,8 @@
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
+    "@types/node": "24.10.0",
+    "@types/react": "19.2.2",
     "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "^15.0.2",

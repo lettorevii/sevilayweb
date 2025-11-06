@@ -18,15 +18,15 @@ const DailyPostsSection = () => {
         {/* Üst Görsel - Kalem Çizimi */}
         <div className="mb-6">
           <img 
-            src="/ciftttt.png"
+            src="/ailetera.png"
             alt="Pen Illustration"
-            className="w-64 h-auto mx-auto"
+            className="w-48 h-auto mx-auto"
           />
         </div>
 
         {/* Başlık - Poppins Font, #540814 Renk */}
         <h1 className="text-3xl font-poppins font-bold text-[#540814] tracking-wide">
-          Çift Terapisi
+          Aile Terapisi
         </h1>
       </div>
     </section>

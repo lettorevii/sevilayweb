@@ -14,19 +14,19 @@ const DailyPostsSection = () => {
         <div className="absolute inset-0 bg-white/30"></div>
       </div>
 
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-9xl mx-auto text-center">
         {/* Üst Görsel - Kalem Çizimi */}
         <div className="mb-6">
           <img 
-            src="/ciftttt.png"
+            src="/emdrhead.png"
             alt="Pen Illustration"
-            className="w-64 h-auto mx-auto"
+            className="w-[250px] h-auto mx-auto"
           />
         </div>
 
         {/* Başlık - Poppins Font, #540814 Renk */}
         <h1 className="text-3xl font-poppins font-bold text-[#540814] tracking-wide">
-          Çift Terapisi
+          Eğitim
         </h1>
       </div>
     </section>

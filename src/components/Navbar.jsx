@@ -35,7 +35,18 @@ const Navbar = () => {
     {
       title: 'Çalışma Alanlarım',
       items: [
-        { label: 'Çift İlişki Terapisi', href: '/calismalanlarim/ciftterapi' }
+        { label: 'Çift İlişki Terapisi', href: '/calismalanlarim/ciftterapi' },
+        { label: 'Aile Terapisi', href: '/calismalanlarim/aileterapisi' },
+        { label: 'Bireysel Psikoloji', href: '/calismalanlarim/bireysel' },
+        { label: 'Eğitim', href: '/calismalanlarim/egitim' },
+        { label: 'EMDR Terapisi', href: '/calismalanlarim/emdr' },
+        { label: 'Süpervizyon', href: '/calismalanlarim/supervizyon' }
+      ]
+    },
+    {
+      title: 'Duyurular',
+      items: [
+        { label: 'Duyurular', href: '/duyurular' }
       ]
     },
     {
@@ -90,7 +101,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-white px-24 py-6 flex justify-between items-center border-b border-gray-200 relative">
-        <Link href="/" className="w-[200px] h-auto font-poppins text-[#540814]   hidden md:block">
+        <Link href="/" className="w-[200px] h-auto font-poppins text-[#540814] hidden md:block">
           <img src="/logog.png" alt="" />
         </Link>
 
@@ -132,7 +143,20 @@ const Navbar = () => {
             title="Çalışma Alanlarım" 
             menuKey="workAreas"
             items={[
-              { label: 'Çift İlişki Terapisi', href: '/calismalanlarim/ciftterapi' }
+              { label: 'Çift İlişki Terapisi', href: '/calismalanlarim/ciftterapi' },
+              { label: 'Aile Terapisi', href: '/calismalanlarim/aileterapi' },
+              { label: 'Bireysel Psikoloji', href: '/calismalanlarim/bireyselpsikolo' },
+              { label: 'Eğitim', href: '/calismalanlarim/egitim' },
+              { label: 'EMDR Terapisi', href: '/calismalanlarim/emdr' },
+              { label: 'Süpervizyon', href: '/calismalanlarim/supervizyon' }
+            ]}
+          />
+
+          <MenuDropdown 
+            title="Duyurular" 
+            menuKey="announcements"
+            items={[
+              { label: 'Duyurular', href: '/duyuru' }
             ]}
           />
 

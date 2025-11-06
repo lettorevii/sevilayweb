@@ -1,167 +1,59 @@
-import React from 'react';
-import DailyPostsSection from '../../../components/CiftTerapiHead';
+import React from 'react'
+import SideBar from '../../../components/SideBar'
+import CiftTerapiHead from '../../../components/CiftTerapiHead'
 
-const CoupleTherapyPage = () => {
-  const objectives = [
-    { title: 'İletişimi Geliştirmek', description: 'Çiftlerin duygularını ve düşüncelerini açıkça ifade edebilmelerini sağlamak.' },
-    { title: 'Sorun Çözme Becerileri', description: 'Çiftlerin ilişkilerindeki problemleri etkin bir şekilde çözebilmelerini öğretmek.' },
-    { title: 'Duygusal Bağlılık', description: 'Çiftler arasındaki duygusal bağı güçlendirmek ve yeniden inşa etmek.' },
-    { title: 'Güven Oluşturma', description: 'İlişkide güvenin yeniden sağlanması ve sürdürülebilir hale getirilmesi.' },
-  ];
-
-  const benefits = [
-    { title: 'İlişkideki Stresi Azaltır', description: 'Çiftler arasındaki anlaşmazlıkları ve çatışmaları azaltarak, ilişkinin daha huzurlu ve dengeli olmasını sağlar.' },
-    { title: 'Empati ve Anlayışı Artırır', description: 'Çiftlerin birbirlerini daha iyi anlamalarını ve empati kurmalarını sağlar.' },
-    { title: 'Duygusal Yakınlığı Artırır', description: 'Çiftlerin birbirlerine olan duygusal yakınlıklarını ve bağlılıklarını artırır.' },
-    { title: 'İletişim Becerilerini Geliştir', description: 'Etkili iletişim tekniklerini öğretir, böylece çiftler duygularını ve ihtiyaçlarını daha açık bir şekilde ifade edebilirler.' },
-  ];
-
+const page = () => {
   return (
     <>
-      <DailyPostsSection />
-
-      <div className="bg-white min-h-screen py-8 md:py-20 font-poppins">
-        <div className="mx-auto max-w-[1140px] px-4 md:px-6 lg:px-8">
+    <CiftTerapiHead />
+    
+    <div className="w-full flex justify-center py-8 md:py-12">
+      
+      <div className="max-w-[1140px] w-full mx-auto px-4">
+        <div className="flex flex-col md:flex-row gap-8">
           
-          {/* Bölüm 1: Çift Terapisti Ne Yapar */}
-          <div className="mb-8 md:mb-20">
-            <h2 className="text-lg md:text-2xl font-poppins font-bold text-[#540814] mb-4 md:mb-6 text-left">
-              Çift Terapisti Ne Yapar?
-            </h2>
-            <p className="text-sm md:text-base font-poppins text-[#540814] leading-relaxed text-left max-w-4xl">
-              Çift terapisti, romantik ilişkilerde yaşanan sorunları çözmek ve ilişkileri güçlendirmek için çalışan bir uzmandır. İletişim problemlerini çözme, çatışmaları yönetme, güven inşa etme, duygusal bağlantıyı artırma ve cinsel sorunları ele alma gibi konularda çiftlere yardımcı olur. Amaç, çiftlerin sağlıklı, mutlu ve dengeli bir ilişki sürdürmelerini sağlamaktır.
-            </p>
+          {/* Sidebar */}
+          <div className="md:self-start md:sticky md:top-8">
+            <SideBar />
           </div>
+          
+          
+          {/* Content Area */}
+          <div className="flex-1">
+            <div className="space-y-6 text-[#333333] font-poppins">
+              <p className="text-base leading-relaxed">
+Çift Terapisi, çiftlerin ilişkilerini odak noktasına alarak, ilişkilerinde yaşadıkları duygusal ve sosyal meselelerin değerlendirilip, değişim dönüşümlerin sağlandığı psikoterapi biçimidir. 
+              </p>
 
-          {/* Bölüm 2: Çift Terapisi Nedir - Resim Solda */}
-          <div className="mb-8 md:mb-20">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 items-center">
-              <div>
-                <img 
-                  src="/cift1.png" 
-                  alt="Çift Terapisi Nedir" 
-                  className="w-full h-auto object-cover rounded-lg"
-                />
-              </div>
+              <p className="text-base leading-relaxed">
+Çift terapisi, iki kişi arasında yaşanan ilişkinin duygusal, sosyal, bedensel ve düşünsel olarak değerlendirilip, sorunlu olan kısımların belirlenmesi ve bu sorunların her iki partnerin de ihtiyaçlarını giderecek şekilde değiştirilip dönüştürülmesini amaçlar. Çift terapisinin baş kahramanı ilişkinin kendisidir. Yan rollerde olanlar da ilişkiyi oluşturan partnerlerdir. Partnerlerin bir arada olması ile yaşanan o ilişki, sanki üçüncü bir kişidir. Çift terapisinin odak noktası da bu üçüncü kişidir, yani ilişkinin kendisi.
 
-              <div>
-                <h2 className="text-lg md:text-2xl font-poppins font-bold text-[#540814] mb-4 md:mb-6 text-left">
-                  Çift Terapisi Nedir?
-                </h2>
-                <p className="text-sm md:text-base font-poppins text-[#540814] max-w-4xl leading-relaxed text-left">
-                  Çift terapisi, romantik ilişkilerdeki sorunları çözmek ve çiftlerin birbirleriyle daha sağlıklı bir iletişim kurmalarını sağlamak amacıyla uygulanan bir terapi türüdür. Bu terapi, evli çiftler, uzun süreli ilişkilerde olanlar veya yeni başlayan ilişkilerdeki çiftler için uygundur.
-                </p>
-              </div>
+              </p>
+
+              <p className="text-base leading-relaxed">
+İlişkiyi oluşturan elbette iki kişidir. Bu iki kişinin, o ilişkiye kadar yaşadıkları bireysel hayatları kendilerine özgüdür, biriciktir. Bugünkü yaşadıkları ilişkiye etkisi büyük ve kaçınılmazdır. Çift terapisinde kişilerin bireysel hikayelerine yer verilir, ancak her zaman odakta mevcut ilişki tutulur. Geçmiş yaşamlarında partnerlerin deneyimlerinin bugünkü ilişkileri üzerine etkisi konuşulur ve önemli noktalar tespit edilir. 
+
+              </p>
+                <p className="text-base leading-relaxed">
+Psikoterapi sürecinde, kişinin kendi hayatına farklı açılardan bakabilmeyi amaçlar. Kişinin iç dünyasına yapılan bir yolculuk olarak da tanımlanabilir. Bu yolculukta, psikoterapist, danışana öğüt vermez, tavsiyede bulunmaz, yol göstermez. Ancak, bir yolculuğu çıkan iki kişi olarak, karşılarına çıkan danışanın iç dünyasını keşfetmeye adarlar kendilerini. Psikoterapi süreci, bir nevi kişinin kendisini keşfetme sürecidir. Psikoterapist de bu sürecin gerçekleşmesini sağlayan, doğru zamanlarda doğru soruları sorarak, danışanı düşünmeye davet eden bir noktadadır. Danışan hayatı boyunca yaşadıklarını anlatırken, psikoterapist de bu yaşananları sebep sonuç ilişkileri içerisinde düşünen, geçmişte olanla bugün olanları bağdaştıran, ortak temaları ve döngüleri bulmaya ve bunlar üzerine danışanla birlikte düşünen ve keşfeden bir yerdedir. O nedenle, danışanın anlattıkları, psikoterapistin de bu anlatılanları belirli bir düzleme oturtması ve danışanla birlikte o düzlem üzerinden düşünmeye devam etmesi, danışanın iç dünyasındaki değişimlerin ve dönüşümlerin temel yapıtaşını oluşturur. 
+              </p>
+             <p className="text-base leading-relaxed">
+Bu önemli noktalar arasında, kişilerin partnerlerine ve ilişkilerine dair duyguları, düşünceleri, durumları nasıl algıladıkları, davranışları, davranışların oluşmasını sağlayan inançları, cinsel hayatlarının kalitesi, beklentileri vardır. Bu beklentiler ise hem kişinin kendisinden beklentisi hem de partnerinden beklentisini kapsar. Partnerlerin duygusal ihtiyaçları, bireysel arzuları ve özlemleri üzerinde durulur. Bunlara ek olarak, partnerlerin sorun yaşadıklarında, o soruna nasıl yaklaştıkları ve çözüm için hangi baş etme mekanizmalarını kullandıkları çok önemli ve terapi çalışmasının yönünü belirleyicidir. 
+
+              </p>
+            <p className="text-base leading-relaxed">
+Çift terapisine çiftler genelde belirli bir sorun olduğunda başvurur. Bu sorunlar arasında, cinsel uyumsuzluk, aldatma, anlaşamama, anlaşılamama, aile kavramının farklılığı, kuvvetli fikir ayrılığı, anne-baba rolleriyle karı-koca rollerinin birbirine karışması, köken aile ile yaşanan sorunlar, kimlik karmaşaları vs. vardır. Bu sorunlar olduğunda, çiftler kendi baş etme mekanizmalarını kullanıp sorunları çözmeye çalışıp çözemediklerinde, çaresiz bir yerde hissettiklerinde çift terapisinden destek alırlar. 
+              </p>
+                          <p className="text-base leading-relaxed">
+Bunun yanı sıra, çiftler, kendi partnerlerini ve kendilerini ilişkide daha iyi anlayabilmek, ilişkilerinin kalitesini arttırmak, ilişkilerinin güçlü yanlarını anlayıp, o güçlü tarafları pekiştirip, ilişkide kaynak haline getirmeyi amaçlayarak da çift terapisi alırlar. Bu sayede partnerler ilişkide kendilerini çaresiz bir noktada bulmadan, sorun yaşamadan ilişkilerinin kalitesini arttırmak için çok önemli bir adım atmış olurlar.               </p>
             </div>
           </div>
-
-          {/* Bölüm 3: Çift Terapisi Amaçları */}
-          <div className="mb-8 md:mb-20">
-            <h2 className="text-lg md:text-2xl font-poppins font-bold text-[#540814] mb-4 md:mb-6 text-left">
-              Çift Terapisi Amaçları  
-            </h2>
-            <p className="text-sm md:text-base font-poppins text-[#540814] leading-relaxed mb-4 md:mb-6 text-left max-w-4xl">
-              Çift terapisi, çiftlerin birbirlerini daha iyi anlamalarını, duygusal bağlarını güçlendirmelerini ve ilişkilerinde yaşadıkları sorunları çözmelerini hedefler. Terapinin ana amaçları şunlardır:
-            </p>
-            <ul className="space-y-3 md:space-y-4 max-w-4xl">
-              {objectives.map((item, index) => (
-                <li key={index} className="flex items-start">
-                  <span className="text-[#540814] font-poppins font-bold flex-shrink-0 mx-2 md:mx-3">•</span>
-                  <div className="font-poppins">
-                    <span className="text-sm md:text-base font-bold text-[#540814]">{item.title}:</span>
-                    <span className="text-sm md:text-base text-[#540814] ml-1">{item.description}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Bölüm 4: Çift Terapisinin Faydaları */}
-          <div className="mb-8 md:mb-20">
-            <h2 className="text-lg md:text-2xl font-poppins font-bold text-[#540814] mb-4 md:mb-6 text-right">
-              Çift Terapisinin Faydaları  
-            </h2>
-            <p className="text-sm md:text-base font-poppins text-[#540814] leading-relaxed mb-4 md:mb-6 text-right max-w-4xl ml-auto">
-              Çift terapisi, birçok çift için ilişkilerini iyileştirme ve güçlendirme fırsatı sunar. İşte çift terapisi almanın bazı önemli faydaları: 
-            </p>
-            <ul className="space-y-3 md:space-y-4 max-w-4xl ml-auto" dir="rtl">
-              {benefits.map((item, index) => (
-                <li key={index} className="font-poppins text-right">
-                  <span className="text-sm md:text-base font-bold text-[#540814]">{item.title}:</span>
-                  <span className="text-sm md:text-base text-[#540814] ml-1">{item.description}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Bölüm 5: Çift Terapisi Süreci - Resim Sağda */}
-          <div className="mb-8 md:mb-20">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 items-start">
-              <div>
-                <h2 className="text-lg md:text-2xl font-poppins font-bold text-[#540814] mb-4 md:mb-6 text-left">
-                  Çift Terapisi Süreci
-                </h2>
-                <p className="text-sm md:text-base font-poppins text-[#540814] leading-relaxed mb-4 md:mb-6 text-left">
-                  Çift terapisi, çiftlerin birbirlerini daha iyi anlamalarını, duygusal bağlarını güçlendirmelerini ve ilişkilerinde yaşadıkları sorunları çözmelerini hedefler. Terapinin ana amaçları şunlardır:
-                </p>
-                <ul className="space-y-2 md:space-y-3 text-left">
-                  {objectives.map((item, index) => (
-                    <li key={index} className="flex items-start text-left">
-                      <span className="text-[#540814] font-poppins font-bold mr-2 md:mr-3 flex-shrink-0">•</span>
-                      <div className="font-poppins">
-                        <span className="text-sm md:text-base font-bold text-[#540814]">{item.title}:</span>
-                        <span className="text-sm md:text-base text-[#540814] ml-1">{item.description}</span>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="flex justify-end">
-                <img 
-                  src="/cift3.png" 
-                  alt="Çift Terapisi Süreci" 
-                  className="w-32 md:w-48 ml-0 md:ml-48 h-auto object-cover rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Bölüm 6: Çift Terapisine Kimler Başvurmalı */}
-          <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 items-center">
-              <div></div>
-
-              <div>
-                <h2 className="text-lg md:text-2xl font-poppins font-bold text-[#540814] mb-4 md:mb-6 text-right">
-                  Çift Terapisine Kimler Başvurmalı?
-                </h2>
-                <p className="text-sm md:text-base font-poppins text-[#540814] leading-relaxed mb-4 md:mb-6 text-right">
-                  Çift terapisi, birçok çift için ilişkilerini iyileştirme ve güçlendirme fırsatı sunar. İşte çift terapisi almanın bazı önemli faydaları:
-                </p>
-                <ul className="space-y-2 md:space-y-3 text-right">
-                  {benefits.map((item, index) => (
-                    <li key={index} className="flex items-start flex-row-reverse text-right">
-                      <span className="text-[#540814] font-poppins font-bold ml-2 md:ml-3 flex-shrink-0">•</span>
-                      <div className="font-poppins">
-                        <span className="text-sm md:text-base font-bold text-[#540814]">{item.title}:</span>
-                        <span className="text-sm md:text-base text-[#540814] ml-1">{item.description}</span>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-
+          
         </div>
       </div>
-
-      <div className="mt-8 md:mt-12 w-full h-auto">
-        <img src="/footer.png" alt="Footer" className="w-full h-auto" />
-      </div>
+    </div>
     </>
-  );
-};
+  )
+}
 
-export default CoupleTherapyPage;
+export default page

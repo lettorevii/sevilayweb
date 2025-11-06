@@ -18,7 +18,7 @@ const DailyPostsSection = () => {
         {/* Üst Görsel - Kalem Çizimi */}
         <div className="mb-6">
           <img 
-            src="/ciftttt.png"
+            src="/supervizyon.png"
             alt="Pen Illustration"
             className="w-64 h-auto mx-auto"
           />
@@ -26,7 +26,7 @@ const DailyPostsSection = () => {
 
         {/* Başlık - Poppins Font, #540814 Renk */}
         <h1 className="text-3xl font-poppins font-bold text-[#540814] tracking-wide">
-          Çift Terapisi
+          Süper Vizyon
         </h1>
       </div>
     </section>
