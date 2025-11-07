@@ -36,8 +36,8 @@ const Navbar = () => {
       title: 'Çalışma Alanlarım',
       items: [
         { label: 'Çift İlişki Terapisi', href: '/calismalanlarim/ciftterapi' },
-        { label: 'Aile Terapisi', href: '/calismalanlarim/aileterapisi' },
-        { label: 'Bireysel Psikoloji', href: '/calismalanlarim/bireysel' },
+        { label: 'Aile Terapisi', href: '/calismalanlarim/aileterapi' },
+        { label: 'Bireysel Psikoloji', href: '/calismalanlarim/bireyselpsikolo' },
         { label: 'Eğitim', href: '/calismalanlarim/egitim' },
         { label: 'EMDR Terapisi', href: '/calismalanlarim/emdr' },
         { label: 'Süpervizyon', href: '/calismalanlarim/supervizyon' }
@@ -46,7 +46,7 @@ const Navbar = () => {
     {
       title: 'Duyurular',
       items: [
-        { label: 'Duyurular', href: '/duyurular' }
+        { label: 'Duyurular', href: '/duyuru' }
       ]
     },
     {

@@ -2,7 +2,7 @@ import React from 'react';
 
 const DailyPostsSection = () => {
   return (
-    <section className="relative w-full h-64 flex items-center justify-center py-10 px-24">
+    <section className="relative w-full min-h-64 flex items-center justify-center py-6 sm:py-8 md:py-10 px-4 sm:px-12 md:px-24">
       {/* Arka Plan Görseli */}
       <div 
         className="absolute inset-0 bg-cover bg-center -z-10"
@@ -14,18 +14,18 @@ const DailyPostsSection = () => {
         <div className="absolute inset-0 bg-white/30"></div>
       </div>
 
-      <div className="max-w-9xl mx-auto text-center">
+      <div className="max-w-9xl mx-auto text-center w-full">
         {/* Üst Görsel - Kalem Çizimi */}
-        <div className="">
+        <div className="mb-4 sm:mb-6 flex justify-center">
           <img 
-            src="/egitimhead.png"
+            src="/egitimmhead.png"
             alt="Pen Illustration"
-            className="w-[1000px] h-auto mx-auto"
+            className="w-96 h-auto"
           />
         </div>
 
         {/* Başlık - Poppins Font, #540814 Renk */}
-        <h1 className="text-3xl font-poppins font-bold text-[#540814] tracking-wide">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-poppins font-bold text-[#540814] tracking-wide">
           Eğitim
         </h1>
       </div>

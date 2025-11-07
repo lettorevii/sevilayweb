@@ -2,7 +2,7 @@ import React from 'react';
 
 const BlogSection = () => {
   return (
-    <section className="bg-white px-4 md:px-24 py-12 md:py-20">
+    <section className="bg-white font-poppins px-4 md:px-24 py-12 md:py-20">
       <div className="max-w-4xl mx-auto">
         {/* Başlık ve Dekoratif Çizgi */}
         <div className="text-center mb-12">
