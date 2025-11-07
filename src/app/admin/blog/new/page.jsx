@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import AdminLayout from '@/components/admin/AdminLayout'
+import AdminLayout from '../../../../components/admin/AdminLayout'
 import { useRouter } from 'next/navigation'
 import { ArrowLeft, Upload, X, Link as LinkIcon } from 'lucide-react'
 import Link from 'next/link'

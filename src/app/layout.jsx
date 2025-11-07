@@ -2,8 +2,8 @@
 
 import './globals.css'
 import { usePathname } from 'next/navigation'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 import NavBar from '../components/Navbar'
 import { AuthProvider } from './context/AuthContext'
 
