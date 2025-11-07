@@ -1,6 +1,8 @@
 import React from 'react'
 import SideBar from '../../../components/SideBar'
 import EgitimHead from '../../../components/EgitimHead'
+import PageFooter from '../../../components/PageFooter'
+
 
 const page = () => {
   return (
@@ -57,6 +59,8 @@ const page = () => {
           </div>
         </div>
       </div>
+          <PageFooter/>
+
     </>
   )
 }

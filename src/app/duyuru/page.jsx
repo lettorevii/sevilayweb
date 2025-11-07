@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import DuyuruHead from  '../../components/DuyuruHead';
+import PageFooter from '../../components/PageFooter'
+
 
 export default function TherapyCard() {
   return (
@@ -32,7 +34,10 @@ export default function TherapyCard() {
           </button>
         </div>
       </div>
+
     </div>
+
+          <PageFooter />
     </>
   );
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import SideBar from '../../../components/SideBar'
 import AileTerapi from '../../../components/AileTerapi'
+import PageFooter from '../../../components/PageFooter'
+
 
 
 const page = () => {
@@ -35,6 +37,8 @@ Aile terapisine gelen ailenin çözmeyi hedeflediği bir sorunu var. Bu sorun, k
         </div>
       </div>
     </div>
+
+    <PageFooter/>
     </>
   )
 }

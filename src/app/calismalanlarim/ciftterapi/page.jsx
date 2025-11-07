@@ -1,6 +1,8 @@
 import React from 'react'
 import SideBar from '../../../components/SideBar'
 import CiftTerapiHead from '../../../components/CiftTerapiHead'
+import PageFooter from '../../../components/PageFooter'
+
 
 const page = () => {
   return (
@@ -52,6 +54,8 @@ Bunun yanı sıra, çiftler, kendi partnerlerini ve kendilerini ilişkide daha i
         </div>
       </div>
     </div>
+        <PageFooter/>
+
     </>
   )
 }

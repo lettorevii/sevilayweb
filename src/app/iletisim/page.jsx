@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
-import DailyPostsSection from '@/components/ContactHead';
+import DailyPostsSection from '../../components/ContactHead';
 
 const ContactPage = () => {
   return (

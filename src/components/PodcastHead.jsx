@@ -26,7 +26,7 @@ const DailyPostsSection = () => {
 
         {/* Başlık - Poppins Font, #540814 Renk */}
         <h1 className="text-3xl font-poppins font-bold text-[#540814] tracking-wide">
-          Güncel Yazılarım
+          İşitsel Yayınlar
         </h1>
       </div>
     </section>

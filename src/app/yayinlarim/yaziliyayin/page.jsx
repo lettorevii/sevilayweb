@@ -1,5 +1,6 @@
 import React from 'react';
-import DailyPostsSection from '@/components/YaziliHead';
+import DailyPostsSection from '../../../components/YaziliHead';
+import PageFooter from '../../../components/PageFooter'
 
 const MediaPage = () => {
   return (
@@ -72,6 +73,8 @@ const MediaPage = () => {
           </div>
         </div>
       </div>
+              <PageFooter/>
+
     </>
   );
 };

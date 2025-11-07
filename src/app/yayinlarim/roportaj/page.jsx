@@ -1,7 +1,9 @@
 'use client';
 
 import React from 'react';
-import DailyPostsSection from '@/components/GorselHead';
+import DailyPostsSection from '../../../components/GorselHead';
+import PageFooter from '../../../components/PageFooter'
+
 
 const VideosPage = () => {
   const videos = [
@@ -95,9 +97,9 @@ const VideosPage = () => {
       </div>
 
       {/* Footer Görseli */}
-      <div className="mt-8 md:mt-12 w-full h-auto">
-        <img src="/footer.png" alt="" className="w-full h-auto" />
-      </div>
+
+              <PageFooter/>
+
     </>
   );
 };

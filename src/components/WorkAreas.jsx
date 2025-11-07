@@ -6,42 +6,42 @@ const WorkAreasSection = () => {
       id: 1, 
       title: 'EMDR Terapisi', 
       image: '/emdr.png', 
-      link: '/emdr-terapisi',
+      link: '/calismalanlarim/emdr',
       description: 'EMDR Terapisi, kişinin hayatındaki travmatik yaşantıların olumsuz etkilerini azaltarak, zihinsel ve duygusal iyileşmeyi destekleyen etkili bir psikoterapi yöntemidir.'
     },
     { 
       id: 2, 
       title: 'Bireysel Psikoterapi', 
       image: '/bireyselp.png', 
-      link: '/bireysel-psikoterapi',
+      link: '/calismalanlarim/bireyselpsikolo',
       description: 'Yetişkinlerle Bireysel Psikoterapi, bireylerin yaşadığı duygusal, davranışsal ve zihinsel zorlukların değerlendirilip, çözümüne odaklanan profesyonel psikoterapi biçimidir.'
     },
     { 
       id: 3, 
       title: 'Çift İlişki Terapisi', 
       image: '/ciftiliski.png', 
-      link: '/cift-iliski-terapisi',
+      link: '/calismalanlarim/ciftterapi',
       description: 'Çift Terapisi, ilişkilerinde duygusal ve iletişimsel zorluklar yaşayan çiftlerin bağlarını güçlendirmeye ve anlayışı geliştirmeye odaklanan psikoterapi biçimidir.'
     },
     { 
       id: 4, 
       title: 'Aile Terapisi', 
       image: '/ailet.png', 
-      link: '/aile-terapisi',
+      link: '/calismalanlarim/aileterapi',
       description: 'Aile Terapisi, anne-baba ve çocukların birlikte ele alındığı, aile içi iletişimi güçlendirmeyi ve işlevleri iyileştirmeyi hedefleyen psikoterapi biçimidir.'
     },
     { 
       id: 5, 
       title: 'Süpervizyon', 
       image: '/super.png', 
-      link: '/supervizyon',
+      link: '/calismalanlarim/supervizyon',
       description: 'Süpervizyon, meslektaşlara vakalar üzerinden bilgi, deneyim ve etik rehberlik aktarımıyla mesleki gelişimlerini destekleyen profesyonel bir eğitim biçimidir.'
     },
     { 
       id: 6, 
       title: 'Eğitim', 
       image: '/egitim.png', 
-      link: '/egitim',
+      link: '/calismalanlarim/egitim',
       description: 'Eğitim, meslektaşlara veya farklı meslek gruplarına yönelik olarak kurumlarda düzenlenen bilgilendirici seminerler ve gelişimi destekleyen programlardır. '
     },
   ];

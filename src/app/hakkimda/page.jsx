@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import Hakkimda from '../../components/Hakkimda'
 import AboutSection from '../../components/About'
+import PageFooter from '../../components/PageFooter'
 
 const AboutPage = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -79,9 +80,9 @@ const AboutPage = () => {
       </div>
 
       {/* Footer */}
-      <div className='mt-12 w-full h-auto'>
-        <img src="/footer.png" alt="" className="w-full" />
-      </div>
+<PageFooter />
+
+
     </div>
   )
 }

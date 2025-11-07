@@ -1,6 +1,8 @@
 import React from 'react'
 import SideBar from '../../../components/SideBar'
 import SuperHead from '../../../components/SuperHead'
+import PageFooter from '../../../components/PageFooter'
+
 const page = () => {
   return (
     <>
@@ -46,6 +48,8 @@ Süpervizyon, klinik uygulamanın ne kadar doğru gittiğini kontrol etmenin vaz
         </div>
       </div>
     </div>
+        <PageFooter/>
+
     </>
   )
 }

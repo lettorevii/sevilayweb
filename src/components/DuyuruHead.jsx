@@ -20,7 +20,7 @@ const DailyPostsSection = () => {
           <img 
             src="/duyuruhead.png"
             alt="Pen Illustration"
-            className="w-64 h-auto mx-auto"
+            className="w-32 h-auto mx-auto"
           />
         </div>
 

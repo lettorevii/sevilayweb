@@ -16,11 +16,11 @@ const DailyPostsSection = () => {
 
       <div className="max-w-9xl mx-auto text-center">
         {/* Üst Görsel - Kalem Çizimi */}
-        <div className="mb-6">
+        <div className="">
           <img 
             src="/egitimhead.png"
             alt="Pen Illustration"
-            className="w-[800px] h-auto mx-auto"
+            className="w-[1000px] h-auto mx-auto"
           />
         </div>
 

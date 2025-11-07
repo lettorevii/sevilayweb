@@ -1,6 +1,8 @@
-import DailyPostsSection from '@/components/PodcastHead';
+import DailyPostsSection from '../../../components/PodcastHead';
 import React from 'react';
-import Podcast from '@/components/Podcast';
+import Podcast from '../../../components/Podcast';
+import PageFooter from '../../../components/PageFooter'
+
 
 const PodcastSection = () => {
   return (
@@ -50,6 +52,8 @@ const PodcastSection = () => {
           </div>
         </div>
       </section>
+              <PageFooter/>
+
     </>
   );
 };

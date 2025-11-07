@@ -1,6 +1,8 @@
 import React from 'react'
 import SideBar from '../../../components/SideBar'
 import BireyselHead from '../../../components/BireyselHead'
+import PageFooter from '../../../components/PageFooter'
+
 
 const page = () => {
   return (
@@ -51,6 +53,8 @@ Sebepler, geçmiş yaşamdaki döngüler, önemli temalar belirlendikten sonra, 
         </div>
       </div>
     </div>
+        <PageFooter/>
+
     </>
   )
 }

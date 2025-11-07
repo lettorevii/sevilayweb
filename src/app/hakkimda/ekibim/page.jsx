@@ -1,5 +1,6 @@
 import React from 'react';
 import EkibimHead from '../../../components/EkibimHead';
+import PageFooter from '../../../components/PageFooter'
 
 const TeamMemberPage = () => {
   return (
@@ -72,6 +73,8 @@ const TeamMemberPage = () => {
       {/* Alt kısım - Tam genişlik görsel */}
       <div style={{ display: 'none' }}>        
       </div>
+
+      <PageFooter />
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import React from 'react'
 import SideBar from '../../../components/SideBar'
 import EmdrHead from '../../../components/EmdrHead'
+import PageFooter from '../../../components/PageFooter'
+
 const page = () => {
   return (
     <>
@@ -82,6 +84,8 @@ EMDR’ın takip ettiği adımlar ve süreçler, kişinin yaşantıladığı her
         </div>
       </div>
     </div>
+        <PageFooter/>
+
     </>
   )
 }

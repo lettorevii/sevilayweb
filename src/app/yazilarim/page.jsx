@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ExternalLink } from 'lucide-react'
-import YazilarimHead from '@/components/YazilarimHead'
+import YazilarimHead from '../../components/YazilarimHead'
 
 const ReadingGroup = ({ id, image, title, description, link }) => {
   const [isMobile, setIsMobile] = useState(false)
