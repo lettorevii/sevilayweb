@@ -4,6 +4,7 @@ import EgitimHead from '../../../components/EgitimHead'
 import PageFooter from '../../../components/PageFooter'
 
 
+
 const page = () => {
   return (
     <>
@@ -23,35 +24,40 @@ const page = () => {
               <div className="space-y-6 text-[#333333] font-poppins">
                 
                 {/* İlk Paragraf */}
-                <p className="text-base leading-relaxed">
+                <p className="text-[12pt] leading-relaxed">
                   Eğitim, meslektaşlara ya da farklı meslek gruplarına, kurumlar bilgilendirici eğitim ve seminerler.
                 </p>
 
+
                 {/* İkinci Paragraf */}
-                <p className="text-base leading-relaxed">
+                <p className="text-[12pt] leading-relaxed">
                   Eğitimler, meslek içi olup, daha az deneyimli ya da dış deneyimli meslektaşlara, terapistin kendi uzmanlık konularında bilgilendirici, eğitici olmak adına verdiği eğitimleri kapsar. Buna ek olarak, meslek dışında, farklı meslek gruplarına (diyetisyenler, eczacılar, doktorlar, dış hekimleri vb.) ya da global ya da ulusal kurumlar ihtiyaçlarına ya da hedefleri doğrultusunda verilen eğitimleri de kapsar.
                 </p>
 
+
                 {/* Ara Başlık */}
-                <p className="text-base font-semibold text-[#550613] leading-relaxed">
+                <p className="text-[12pt] font-semibold text-[#550613] leading-relaxed">
                   Bu eğitimler arasında,
                 </p>
 
+
                 {/* Madde İşaretli Liste */}
                 <ul className="list-disc list-inside space-y-3 ml-2">
-                  <li className="text-base leading-relaxed">Etkili İletişim Yolları,</li>
-                  <li className="text-base leading-relaxed">Zaman Yönetimi,</li>
-                  <li className="text-base leading-relaxed">Stres Yönetimi,</li>
-                  <li className="text-base leading-relaxed">Kayıp ve Yasla Baş Etme Mekanizmalarını Geliştirme,</li>
-                  <li className="text-base leading-relaxed">Aile İçi İlişkileri Güçlendirme,</li>
-                  <li className="text-base leading-relaxed">Aile İlişkileri,</li>
-                  <li className="text-base leading-relaxed">Çift İlişkilerindeki Sorunlar ve Çözüm Yolları gibi konular vardır.</li>
+                  <li className="text-[12pt] leading-relaxed">Etkili İletişim Yolları,</li>
+                  <li className="text-[12pt] leading-relaxed">Zaman Yönetimi,</li>
+                  <li className="text-[12pt] leading-relaxed">Stres Yönetimi,</li>
+                  <li className="text-[12pt] leading-relaxed">Kayıp ve Yasla Baş Etme Mekanizmalarını Geliştirme,</li>
+                  <li className="text-[12pt] leading-relaxed">Aile İçi İlişkileri Güçlendirme,</li>
+                  <li className="text-[12pt] leading-relaxed">Aile İlişkileri,</li>
+                  <li className="text-[12pt] leading-relaxed">Çift İlişkilerindeki Sorunlar ve Çözüm Yolları gibi konular vardır.</li>
                 </ul>
 
+
                 {/* Son Paragraf */}
-                <p className="text-base leading-relaxed">
+                <p className="text-[12pt] leading-relaxed">
                   Bunlara ek olarak, kurumların ya da meslek gruplarının ihtiyaç duyduğu alanlar analiz edilip, ihtiyaca hizmet eden eğitim ve seminerler dizisi de hazırlanmaktadır.
                 </p>
+
 
               </div>
             </div>
@@ -61,8 +67,10 @@ const page = () => {
       </div>
           <PageFooter/>
 
+
     </>
   )
 }
+
 
 export default page
