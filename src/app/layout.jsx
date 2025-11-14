@@ -1,25 +1,22 @@
-'use client'
-
 import './globals.css'
-import { usePathname } from 'next/navigation'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import NavBar from '../components/Navbar'
 import { AuthProvider } from './context/AuthContext'
 
+export const metadata = {
+  title: 'Dr Sevilay Abudaram',
+}
+
 export default function RootLayout({ children }) {
-  const pathname = usePathname()
-  const isAdminPage = pathname?.startsWith('/admin')
-  
   return (
     <html lang="tr" suppressHydrationWarning>
       <body suppressHydrationWarning>
         <AuthProvider>
-          {!isAdminPage && <Header />}
-          {!isAdminPage && <NavBar />}
-          
+          <Header />
+          <NavBar />
           {children}
-          {!isAdminPage && <Footer />}
+          <Footer />
         </AuthProvider>
       </body>
     </html>

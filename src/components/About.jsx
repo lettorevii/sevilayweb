@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutSection = () => {
   return (
-    <section className="bg-white py-12 md:py-20">
+    <section className="bg-white py-12 md:py-20 overflow-x-hidden">
       <div className="mx-auto max-w-[1140px] px-4 md:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center md:items-start">
           {/* Sol Görsel - Doktor */}
@@ -10,12 +10,12 @@ const AboutSection = () => {
             <img 
               src="/insan2.png" 
               alt="Dr. Sevilay Abudaram" 
-              className="w-full h-auto object-cover rounded-lg"
+              className="w-full h-auto object-cover hidden lg:block rounded-lg"
             />
           </div>
           
           {/* Sağ Taraf - Bilgi Kartı */}
-          <div className="flex-1 w-full">
+          <div className="flex-1 w-full sm:mx-4 px-8 md:px-6 lg:px-8">
             {/* Başlık */}
             <h1 style={{ fontSize: 'clamp(24px, 6vw, 30pt)', lineHeight: '1.2' }} className="font-bold text-[#5C2E3A] ">
               Dr. Sevilay Abudaram

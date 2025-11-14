@@ -17,7 +17,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="w-full my-24 mx-6 md:w-80 bg-[#f6f2ef] p-8">
+    <div className="w-full md:w-80 bg-[#f6f2ef] p-6 sm:p-8 px-4 md:px-6">
       <nav className="space-y-0">
         {menuItems.map((item, index) => (
           <div key={index}>

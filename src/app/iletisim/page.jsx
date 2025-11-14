@@ -122,55 +122,55 @@ const ContactPage = () => {
 
 
             {/* Sağ Taraf - İletişim Bilgileri */}
-            <div className="space-y-8 md:space-y-12">
-              {/* Telefon */}
-              <div className="flex items-start gap-4 md:gap-6">
-                <div className="w-12 md:w-16 h-12 md:h-16 border-2 border-[#540814] rounded flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 md:w-7 h-5 md:h-7 text-[#540814]" />
-                </div>
-                <div>
-                  <a 
-                    href="tel:05322298477" 
-                    style={{ fontSize: 'clamp(12px, 4vw, 14pt)' }}
-                    className="font-poppins text-[#540814] hover:opacity-70 transition-opacity break-all"
-                  >
-                    0532 229 84 77
-                  </a>
-                </div>
-              </div>
+{/* Sağ Taraf - İletişim Bilgileri */}
+<div className="space-y-4 md:space-y-6">
+  {/* Telefon */}
+  <div className="flex items-start gap-2 md:gap-3">
+    <div className="w-10 md:w-12 h-10 md:h-12 border-2 border-[#540814] rounded flex items-center justify-center flex-shrink-0">
+      <Phone className="w-4 md:w-6 h-4 md:h-6 text-[#540814]" />
+    </div>
+    <div>
+      <a 
+        href="tel:05322298477" 
+        style={{ fontSize: 'clamp(10px, 3vw, 12pt)' }}
+        className="font-poppins text-[#540814] hover:opacity-70 transition-opacity break-all"
+      >
+        0532 229 84 77
+      </a>
+    </div>
+  </div>
 
+  {/* Email */}
+  <div className="flex items-start gap-2 md:gap-3">
+    <div className="w-10 md:w-12 h-10 md:h-12 border-2 border-[#540814] rounded flex items-center justify-center flex-shrink-0">
+      <Mail className="w-4 md:w-6 h-4 md:h-6 text-[#540814]" />
+    </div>
+    <div>
+      <a 
+        href="mailto:info@drsevilayabudaram.com" 
+        style={{ fontSize: 'clamp(10px, 3vw, 12pt)' }}
+        className="font-poppins text-[#540814] hover:opacity-70 transition-opacity break-all"
+      >
+        info@drsevilayabudaram.com
+      </a>
+    </div>
+  </div>
 
-              {/* Email */}
-              <div className="flex items-start gap-4 md:gap-6">
-                <div className="w-12 md:w-16 h-12 md:h-16 border-2 border-[#540814] rounded flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-5 md:w-7 h-5 md:h-7 text-[#540814]" />
-                </div>
-                <div>
-                  <a 
-                    href="mailto:info@drsevilayabudaram.com" 
-                    style={{ fontSize: 'clamp(12px, 4vw, 14pt)' }}
-                    className="font-poppins text-[#540814] hover:opacity-70 transition-opacity break-all"
-                  >
-                    info@drsevilayabudaram.com
-                  </a>
-                </div>
-              </div>
+  {/* Adres */}
+  <div className="flex items-start gap-2 md:gap-3">
+    <div className="w-10 md:w-12 h-10 md:h-12 border-2 border-[#540814] rounded flex items-center justify-center flex-shrink-0">
+      <MapPin className="w-4 md:w-6 h-4 md:h-6 text-[#540814]" />
+    </div>
+    <div>
+      <p style={{ fontSize: 'clamp(10px, 3vw, 12pt)' }} className="font-poppins text-[#540814] leading-relaxed">
+        Teşvikiye Mah. Poyracık Sk.<br />
+        Feza Apt. No: 18 D: 4 Kat: -1<br />
+        Nişantaşı Şişli İstanbul
+      </p>
+    </div>
+  </div>
+</div>
 
-
-              {/* Adres */}
-              <div className="flex items-start gap-4 md:gap-6">
-                <div className="w-12 md:w-16 h-12 md:h-16 border-2 border-[#540814] rounded flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 md:w-7 h-5 md:h-7 text-[#540814]" />
-                </div>
-                <div>
-                  <p style={{ fontSize: 'clamp(12px, 4vw, 14pt)' }} className="font-poppins text-[#540814] leading-relaxed">
-                    Teşvikiye Mah. Poyracık Sk.<br />
-                    Feza Apt. No: 18 D: 4 Kat: -1<br />
-                    Nişantaşı Şişli İstanbul
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -12,17 +12,15 @@ const page = () => {
     
     <div className="w-full flex justify-center py-8 md:py-12">
       
-      <div className="max-w-[1140px] w-full mx-auto px-4">
+      <div className="max-w-[1140px] w-full mx-auto px-8">
         <div className="flex flex-col md:flex-row gap-8">
           
           {/* Sidebar */}
-          <div className="md:self-start md:sticky md:top-8">
-            <SideBar />
-          </div>
+
           
           
           {/* Content Area */}
-          <div className="flex-1">
+            <div className="flex-1 order-1 md:order-2 px-4 md:px-0">
             <div className="space-y-6 text-[#333333] font-poppins">
               <p className="text-[12pt] leading-relaxed">
 Çift Terapisi, çiftlerin ilişkilerini odak noktasına alarak, ilişkilerinde yaşadıkları duygusal ve sosyal meselelerin değerlendirilip, değişim dönüşümlerin sağlandığı psikoterapi biçimidir. 
@@ -56,7 +54,9 @@ Bu önemli noktalar arasında, kişilerin partnerlerine ve ilişkilerine dair du
 Bunun yanı sıra, çiftler, kendi partnerlerini ve kendilerini ilişkide daha iyi anlayabilmek, ilişkilerinin kalitesini arttırmak, ilişkilerinin güçlü yanlarını anlayıp, o güçlü tarafları pekiştirip, ilişkide kaynak haline getirmeyi amaçlayarak da çift terapisi alırlar. Bu sayede partnerler ilişkide kendilerini çaresiz bir noktada bulmadan, sorun yaşamadan ilişkilerinin kalitesini arttırmak için çok önemli bir adım atmış olurlar.               </p>
             </div>
           </div>
-          
+            <div className="md:self-start md:sticky md:top-8 order-2 md:order-1">
+            <SideBar />
+          </div>
         </div>
       </div>
     </div>

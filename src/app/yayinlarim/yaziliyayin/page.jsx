@@ -9,15 +9,15 @@ const MediaPage = () => {
         <DailyPostsSection />
       </div>
 
-      <div className="bg-white min-h-screen px-4 md:px-24 py-12 md:py-20">
-        <div className="max-w-[1140px] mx-auto">
+      <div className="bg-white min-h-screen px-4 md:px-16 py-8 md:py-16">
+        <div className="max-w-[960px] mx-auto">
           
           {/* Grid - 2x2 Responsive */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
             
-            {/* Kart 1 - Üst Sol */}
+            {/* Kart 1 */}
             <a href="#" className="block group">
-              <div className="mb-4 md:mb-6 h-40 md:h-64">
+              <div className="mb-4 md:mb-6 h-28 md:h-40">
                 <img 
                   src="/anadolu.png" 
                   alt="Sosyal Medyadaki Güzellik Algısı" 
@@ -29,9 +29,9 @@ const MediaPage = () => {
               </h3>
             </a>
 
-            {/* Kart 2 - Üst Sağ */}
+            {/* Kart 2 */}
             <a href="#" className="block group">
-              <div className="mb-4 md:mb-6 h-40 md:h-64">
+              <div className="mb-4 md:mb-6 h-28 md:h-40">
                 <img 
                   src="/haberturk.png" 
                   alt="Sosyal Medyadaki Güzellik Algısı" 
@@ -43,9 +43,9 @@ const MediaPage = () => {
               </h3>
             </a>
 
-            {/* Kart 3 - Alt Sol */}
+            {/* Kart 3 */}
             <a href="#" className="block group">
-              <div className="mb-4 md:mb-6 h-40 md:h-64">
+              <div className="mb-4 md:mb-6 h-28 md:h-40">
                 <img 
                   src="/aktuel.png" 
                   alt="Sosyal Medyadaki Güzellik Algısı" 
@@ -57,9 +57,9 @@ const MediaPage = () => {
               </h3>
             </a>
 
-            {/* Kart 4 - Alt Sağ */}
+            {/* Kart 4 */}
             <a href="#" className="block group">
-              <div className="mb-4 md:mb-6 h-40 md:h-64">
+              <div className="mb-4 md:mb-6 h-28 md:h-40">
                 <img 
                   src="/ekspres.png" 
                   alt="Sosyal Medyadaki Güzellik Algısı" 
@@ -70,11 +70,12 @@ const MediaPage = () => {
                 Sosyal Medyadaki Güzellik Algısı Psikolojik Sorunlara Neden Olabiliyor
               </h3>
             </a>
+
           </div>
         </div>
       </div>
-              <PageFooter/>
 
+      <PageFooter/>
     </>
   );
 };

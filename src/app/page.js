@@ -11,13 +11,14 @@ import BlogSection from '../components/Blog.jsx'
 
 const HomePage = () => {
   return (
-    <>
+    < > <div className='overflow-x-hidden'>
       <HeroSection />
       <AboutSection />
       <PodcastSection />
       <WorkAreasSection />
       <NewLifeSection />
       <BlogSection />
+      </div>
     </>
   );
 };

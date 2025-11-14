@@ -29,7 +29,7 @@ const NewLifeSection = () => {
   ];
 
   return (
-    <section className="bg-[#f7f3f0] px-24 py-20 md:px-24 md:py-20" style={{ fontFamily: 'Poppins, sans-serif' }}>
+    <section className="bg-[#f7f3f0] px-6 sm:px-12 md:px-24 py-20" style={{ fontFamily: 'Poppins, sans-serif' }}>
       <div className="max-w-[1140px] mx-auto">
         {/* Başlık */}
         <div className="text-center mb-16 relative">
@@ -87,7 +87,7 @@ const NewLifeSection = () => {
         </div>
       </div>
 
-      {/* Mobil Only Styles */}
+      {/* Mobil Özel CSS */}
       <style jsx>{`
         @media (max-width: 768px) {
           section {
@@ -98,12 +98,12 @@ const NewLifeSection = () => {
           }
 
           h2 {
-            font-size: 24px;
+            font-size: 20px;  /* Küçültülmüş mobil başlık */
             margin-bottom: 2rem;
           }
 
           h3 {
-            font-size: 14px;
+            font-size: 12px; /* Küçültülmüş mobil alt başlık */
           }
 
           p {

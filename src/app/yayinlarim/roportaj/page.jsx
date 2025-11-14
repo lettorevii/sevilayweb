@@ -10,42 +10,32 @@ const VideosPage = () => {
     {
       id: 1,
       title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
-      src: 'https://www.youtube.com/embed/RoHmooscQcQ',
+      src: 'https://www.youtube.com/embed/aUTo5zaUQyc',
     },
     {
       id: 2,
-      title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
-      src: 'https://www.youtube.com/embed/4vDtqLMNGzI',
+      title: 'Dr. Sevilay Abudaram - Ekotürk / Life Style - Tanıtım',
+      src: 'https://www.youtube.com/embed/h0xjDAqcEak',
     },
     {
       id: 3,
-      title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
+      title: 'İlişkilerde Yaşanan Sorunlar Nelerdir ? | Uzman Klinik Psikolog Sevilay Sitrava | 8de Sağlık',
       src: 'https://www.youtube.com/embed/RoHmooscQcQ',
     },
     {
       id: 4,
-      title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
-      src: 'https://www.youtube.com/embed/4vDtqLMNGzI',
+      title: 'Tam kapanmada psikolojik sağlığımız Uzman Klinik Psikoloğumuz Dr. Sevilay Sitrava',
+      src: 'https://www.youtube.com/embed/Y2l7ZzyWg4Y',
     },
     {
       id: 5,
-      title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
-      src: 'https://www.youtube.com/embed/RoHmooscQcQ',
+      title: 'Kaygı Duygusu Nedir?',
+      src: 'https://www.youtube.com/embed/_fWcEAz6cY4',
     },
     {
       id: 6,
       title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
-      src: 'https://www.youtube.com/embed/4vDtqLMNGzI',
-    },
-    {
-      id: 7,
-      title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
-      src: 'https://www.youtube.com/embed/RoHmooscQcQ',
-    },
-    {
-      id: 8,
-      title: 'İletişim Becerileri - SEVİLAY SİTRAVA - UZMAN KLİNİK PSİKOLOG - TV8int - ŞEHRİN NABZI',
-      src: 'https://www.youtube.com/embed/4vDtqLMNGzI',
+      src: 'https://www.youtube.com/embed/1aoS0xj3Cdc',
     },
   ];
 

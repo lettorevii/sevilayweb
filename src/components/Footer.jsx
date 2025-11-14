@@ -3,28 +3,28 @@ import { Phone, Mail, MapPin, Linkedin, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#EEE5E0] font-poppins px-12 md:px-6 lg:px-60 py-12 md:py-16">
-      <div className="W-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-96 md:gap-96">
+    <footer className="bg-[#f7f3f0] font-poppins px-4 sm:px-6 md:px-12 lg:px-24 py-12 md:py-16">
+      <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20">
         {/* Sol Sütun - Dr. Sevilay Abudaram */}
-        <div >
-          <h3 className="text-2xl md:text-3xl font-poppins font-bold text-[#540814] mb-4 md:mb-6">
-            <img src="/logog.png" alt="" className='w-[200px]'/>
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold text-[#540814] mb-4 md:mb-6">
+            <img src="/logog.png" alt="Logo" className='w-[200px]'/>
           </h3>
-          <p className="text-sm md:text-base font-poppins text-[#540814] leading-relaxed">
+          <p className="text-sm md:text-base text-[#540814] leading-relaxed">
             Lisans derecemi Boğaziçi Üniversitesi Psikolojik Danışmanlık bölümünden yüksek onur derecesiyle aldım. Uzmanlığımı Klinik Psikoloji Yüksek Lisans programını (yetişkin) tamamlayarak İstanbul Bilgi Üniversitesi'nden aldım. Doktora derecemi ise Klinik Uygulama programını tamamlayarak İngiltere'den University of Exeter'den aldım.
           </p>
         </div>
 
         {/* Sağ Sütun - İletişim */}
-        <div >
-          <h3 className="text-xl md:text-2xl font-poppins font-bold text-[#540814] mb-4 md:mb-6">
+        <div>
+          <h3 className="text-xl md:text-2xl font-bold text-[#540814] mb-4 md:mb-6">
             İletişim
           </h3>
           <div className="space-y-3 md:space-y-4">
             {/* Telefon */}
             <div className="flex items-start gap-2 md:gap-3">
               <Phone className="w-4 md:w-5 h-4 md:h-5 text-[#540814] mt-1 flex-shrink-0" />
-              <a href="tel:05322298477" className="text-sm md:text-base font-poppins text-[#540814] hover:opacity-70 transition-opacity break-all">
+              <a href="tel:05322298477" className="text-sm md:text-base text-[#540814] hover:opacity-70 transition-opacity break-all">
                 0532 229 84 77
               </a>
             </div>
@@ -32,7 +32,7 @@ const Footer = () => {
             {/* Email */}
             <div className="flex items-start gap-2 md:gap-3">
               <Mail className="w-4 md:w-5 h-4 md:h-5 text-[#540814] mt-1 flex-shrink-0" />
-              <a href="mailto:info@drsevilayabudaram.com" className="text-sm md:text-base font-poppins text-[#540814] hover:opacity-70 transition-opacity break-all">
+              <a href="mailto:info@drsevilayabudaram.com" className="text-sm md:text-base text-[#540814] hover:opacity-70 transition-opacity break-all">
                 info@drsevilayabudaram.com
               </a>
             </div>
@@ -40,7 +40,7 @@ const Footer = () => {
             {/* Adres */}
             <div className="flex items-start gap-2 md:gap-3">
               <MapPin className="w-4 md:w-5 h-4 md:h-5 text-[#540814] mt-1 flex-shrink-0" />
-              <p className="text-sm md:text-base font-poppins text-[#540814]">
+              <p className="text-sm md:text-base text-[#540814]">
                 Nişantaşı, Şişli İstanbul
               </p>
             </div>
